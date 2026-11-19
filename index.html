@@ -1,0 +1,1529 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>123中文字幕一区_品牌官网,专业字幕生态与高清内容社区</title>
+<meta name="description" content="123中文字幕一区官方网站，深耕中文字幕内容生态，汇聚企业原创精品内容与专业创作者，打造值得信赖的高清字幕内容社区。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23101830'/%3E%3Cpath d='M16 40V24h8l8 10 8-10h8v16h-6V32l-10 12-10-12v8z' fill='%2367e8f9'/%3E%3C/svg%3E">
+<style>
+:root{
+  --zc-bg:#0d1220;
+  --zc-bg2:#121a2e;
+  --zc-card:#161f36;
+  --zc-line:rgba(120,160,220,.18);
+  --zc-txt:#e8eefc;
+  --zc-sub:#9fb0cc;
+  --zc-acc:#67e8f9;
+  --zc-acc2:#a78bfa;
+  --zc-warm:#fbbf24;
+  --zc-radius:16px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--zc-bg);color:var(--zc-txt);
+  font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,-apple-system,sans-serif;
+  line-height:1.75;font-size:15.5px;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,h4{margin:0;line-height:1.35;font-weight:700}
+p{margin:0}
+ul{margin:0;padding:0;list-style:none}
+button{font-family:inherit;cursor:pointer;border:0;background:none;color:inherit}
+
+/* 吸顶组 */
+.zc-sticky-wrap{position:sticky;top:0;z-index:60}
+.zc-notice{
+  background:linear-gradient(90deg,#1b2a52,#243b6b 45%,#2c3f74);
+  border-bottom:1px solid var(--zc-line);
+  font-size:13px;color:#cfe0ff;
+}
+.zc-notice-inner{
+  max-width:1240px;margin:0 auto;padding:9px 20px;
+  display:flex;gap:14px;align-items:center;flex-wrap:wrap;
+}
+.zc-notice-tag{
+  background:var(--zc-acc);color:#062030;font-weight:700;
+  padding:1px 9px;border-radius:999px;font-size:12px;letter-spacing:.5px;
+}
+.zc-notice-txt{flex:1;min-width:200px}
+.zc-notice-txt b{color:#fff}
+.zc-notice-link{color:var(--zc-acc);font-weight:600;white-space:nowrap}
+.zc-notice-link:hover{text-decoration:underline}
+
+.zc-header{
+  background:rgba(13,18,32,.92);
+  backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--zc-line);
+}
+.zc-header-inner{
+  max-width:1240px;margin:0 auto;padding:0 20px;
+  display:flex;align-items:center;gap:26px;height:66px;
+}
+.zc-logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:19px;letter-spacing:.5px;white-space:nowrap}
+.zc-logo-mark{
+  width:38px;height:38px;border-radius:11px;display:grid;place-items:center;
+  background:linear-gradient(135deg,#67e8f9,#a78bfa);color:#08121f;font-weight:900;font-size:15px;
+}
+.zc-logo small{display:block;font-size:10.5px;color:var(--zc-sub);font-weight:500;letter-spacing:2px}
+.zc-nav{display:flex;gap:4px;flex:1;flex-wrap:wrap}
+.zc-nav a{
+  padding:8px 12px;border-radius:9px;font-size:14.5px;color:var(--zc-sub);
+  transition:.2s;white-space:nowrap;
+}
+.zc-nav a:hover,.zc-nav a.zc-is-active{color:#fff;background:rgba(103,232,249,.12)}
+.zc-head-tools{display:flex;align-items:center;gap:10px}
+.zc-search{position:relative;display:flex;align-items:center}
+.zc-search input{
+  width:190px;padding:8px 38px 8px 14px;border-radius:999px;
+  border:1px solid var(--zc-line);background:var(--zc-bg2);color:var(--zc-txt);
+  font-size:13.5px;outline:none;transition:.25s;
+}
+.zc-search input:focus{width:230px;border-color:var(--zc-acc);box-shadow:0 0 0 3px rgba(103,232,249,.12)}
+.zc-search button{
+  position:absolute;right:6px;width:28px;height:28px;border-radius:50%;
+  display:grid;place-items:center;color:var(--zc-acc);font-size:14px;
+}
+.zc-search-tip{
+  position:absolute;top:46px;right:0;width:280px;background:var(--zc-card);
+  border:1px solid var(--zc-line);border-radius:12px;padding:10px 12px;font-size:13px;
+  color:var(--zc-sub);display:none;box-shadow:0 16px 40px rgba(0,0,0,.5);z-index:70;
+}
+.zc-search-tip.zc-show{display:block}
+.zc-search-tip b{color:var(--zc-acc)}
+.zc-burger{display:none;width:40px;height:40px;border-radius:10px;border:1px solid var(--zc-line);font-size:18px}
+
+/* 通用容器 */
+.zc-sec{max-width:1240px;margin:0 auto;padding:74px 20px}
+.zc-sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;margin-bottom:34px;flex-wrap:wrap}
+.zc-sec-kicker{
+  font-size:12.5px;letter-spacing:3px;color:var(--zc-acc);font-weight:700;margin-bottom:8px;
+}
+.zc-sec-title{font-size:clamp(22px,3.2vw,31px)}
+.zc-sec-desc{color:var(--zc-sub);font-size:14px;max-width:520px;margin-top:8px}
+.zc-more{
+  font-size:13.5px;color:var(--zc-acc);border:1px solid rgba(103,232,249,.35);
+  padding:7px 16px;border-radius:999px;transition:.25s;white-space:nowrap;
+}
+.zc-more:hover{background:rgba(103,232,249,.14)}
+
+/* 首屏 */
+.zc-hero{position:relative;overflow:hidden;padding-bottom:10px}
+.zc-hero-bg{position:absolute;inset:0;pointer-events:none;opacity:.55}
+.zc-hero-inner{
+  max-width:1240px;margin:0 auto;padding:62px 20px 30px;
+  display:grid;grid-template-columns:1.05fr .95fr;gap:52px;align-items:center;position:relative;
+}
+.zc-hero-tag{
+  display:inline-flex;align-items:center;gap:8px;font-size:12.5px;color:var(--zc-acc);
+  border:1px solid rgba(103,232,249,.3);padding:5px 14px;border-radius:999px;margin-bottom:20px;
+  background:rgba(103,232,249,.07);letter-spacing:1px;
+}
+.zc-hero-tag i{width:6px;height:6px;border-radius:50%;background:var(--zc-acc);box-shadow:0 0 8px var(--zc-acc)}
+.zc-hero h1{
+  font-size:clamp(38px,6vw,66px);letter-spacing:-1px;
+  background:linear-gradient(120deg,#ffffff 30%,#9be8ff 70%,#b8a7ff);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.zc-hero-slogan{
+  margin-top:14px;font-size:clamp(16px,2.2vw,20px);color:#bcd3f0;font-weight:600;letter-spacing:1px;
+}
+.zc-hero-text{margin-top:20px;color:var(--zc-sub);font-size:14.8px;max-width:560px}
+.zc-hero-btns{display:flex;gap:14px;margin-top:30px;flex-wrap:wrap}
+.zc-btn{
+  padding:12px 26px;border-radius:999px;font-size:14.5px;font-weight:600;transition:.25s;
+  display:inline-flex;align-items:center;gap:8px;
+}
+.zc-btn-main{background:linear-gradient(120deg,#67e8f9,#a78bfa);color:#08111f;box-shadow:0 10px 30px rgba(103,232,249,.22)}
+.zc-btn-main:hover{transform:translateY(-2px);box-shadow:0 16px 38px rgba(103,232,249,.32)}
+.zc-btn-ghost{border:1px solid var(--zc-line);color:var(--zc-txt);background:rgba(255,255,255,.03)}
+.zc-btn-ghost:hover{border-color:var(--zc-acc);color:var(--zc-acc)}
+.zc-hero-stats{display:flex;gap:38px;margin-top:42px;flex-wrap:wrap}
+.zc-stat b{font-size:28px;font-weight:800;color:#fff;letter-spacing:-.5px}
+.zc-stat b em{font-style:normal;font-size:15px;color:var(--zc-acc);margin-left:2px}
+.zc-stat span{display:block;font-size:12.5px;color:var(--zc-sub);margin-top:2px;letter-spacing:1px}
+.zc-hero-visual{position:relative}
+.zc-hero-main{
+  border-radius:22px;overflow:hidden;border:1px solid var(--zc-line);
+  box-shadow:0 30px 70px rgba(0,0,0,.55);aspect-ratio:16/10;position:relative;
+}
+.zc-hero-main img{width:100%;height:100%;object-fit:cover}
+.zc-hero-badge{
+  position:absolute;left:16px;top:16px;background:rgba(6,16,30,.75);backdrop-filter:blur(6px);
+  color:#fff;font-size:12px;padding:5px 12px;border-radius:999px;border:1px solid rgba(255,255,255,.18);
+}
+.zc-hero-float{
+  position:absolute;right:-14px;bottom:-22px;width:172px;border-radius:16px;overflow:hidden;
+  border:1px solid var(--zc-line);box-shadow:0 20px 44px rgba(0,0,0,.6);background:var(--zc-card);
+}
+.zc-hero-float img{aspect-ratio:16/10;object-fit:cover}
+.zc-hero-float p{font-size:12px;padding:8px 10px;color:var(--zc-sub)}
+
+/* 深度解析 */
+.zc-about{background:linear-gradient(180deg,rgba(18,26,46,0),rgba(18,26,46,.85) 40%,rgba(18,26,46,0))}
+.zc-about-grid{display:grid;grid-template-columns:1fr 1fr;gap:44px}
+.zc-prose p{margin-bottom:16px;color:#c3d2e8;font-size:14.8px;text-align:justify}
+.zc-prose h3{font-size:17.5px;margin:26px 0 10px;color:#fff;position:relative;padding-left:14px}
+.zc-prose h3::before{
+  content:"";position:absolute;left:0;top:6px;bottom:6px;width:4px;border-radius:4px;
+  background:linear-gradient(180deg,#67e8f9,#a78bfa);
+}
+.zc-about-cards{display:grid;gap:16px;align-content:start}
+.zc-about-card{
+  background:var(--zc-card);border:1px solid var(--zc-line);border-radius:var(--zc-radius);
+  padding:20px 22px;transition:.25s;
+}
+.zc-about-card:hover{border-color:rgba(103,232,249,.45);transform:translateY(-3px)}
+.zc-about-card b{display:block;font-size:15.5px;color:var(--zc-acc);margin-bottom:6px}
+.zc-about-card p{font-size:13.8px;color:var(--zc-sub)}
+
+/* 焦点视频 */
+.zc-focus-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:22px}
+.zc-video-card{
+  background:var(--zc-card);border:1px solid var(--zc-line);border-radius:var(--zc-radius);
+  overflow:hidden;transition:.28s;display:flex;flex-direction:column;
+}
+.zc-video-card:hover{transform:translateY(-4px);border-color:rgba(103,232,249,.5);box-shadow:0 18px 44px rgba(0,0,0,.45)}
+.zc-cover{position:relative;aspect-ratio:16/9;overflow:hidden;background:#0a1020}
+.zc-cover img{width:100%;height:100%;object-fit:cover;transition:.5s}
+.zc-video-card:hover .zc-cover img{transform:scale(1.06)}
+.zc-cover::after{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(180deg,rgba(0,0,0,0) 40%,rgba(4,9,20,.78));
+}
+.zc-cover-tag{
+  position:absolute;left:10px;top:10px;z-index:2;font-size:11.5px;padding:3px 10px;border-radius:999px;
+  background:rgba(103,232,249,.9);color:#06202c;font-weight:700;letter-spacing:.5px;
+}
+.zc-cover-play{
+  position:absolute;z-index:2;left:50%;top:50%;transform:translate(-50%,-50%);
+  width:52px;height:52px;border-radius:50%;background:rgba(8,17,31,.6);
+  border:1px solid rgba(255,255,255,.35);display:grid;place-items:center;font-size:17px;color:#fff;
+  backdrop-filter:blur(4px);transition:.25s;
+}
+.zc-video-card:hover .zc-cover-play{background:var(--zc-acc);color:#062030;border-color:var(--zc-acc)}
+.zc-cover-dur{
+  position:absolute;right:10px;bottom:10px;z-index:2;font-size:11.5px;color:#fff;
+  background:rgba(0,0,0,.62);padding:2px 8px;border-radius:6px;
+}
+.zc-video-body{padding:16px 18px 18px;display:flex;flex-direction:column;gap:9px;flex:1}
+.zc-video-body h3{font-size:16.5px;line-height:1.45}
+.zc-video-body p{font-size:13.4px;color:var(--zc-sub);line-height:1.7}
+.zc-tags{display:flex;gap:7px;flex-wrap:wrap}
+.zc-tag{font-size:11.5px;color:var(--zc-acc2);background:rgba(167,139,250,.12);padding:2px 9px;border-radius:6px}
+.zc-meta{
+  display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:auto;
+  padding-top:10px;border-top:1px dashed var(--zc-line);font-size:12.5px;color:var(--zc-sub);
+  flex-wrap:wrap;
+}
+.zc-author{display:flex;align-items:center;gap:8px}
+.zc-avatar{
+  width:28px;height:28px;border-radius:50%;display:grid;place-items:center;font-size:12.5px;
+  font-weight:700;color:#07121f;flex:none;
+}
+.zc-actions{display:flex;gap:12px}
+.zc-act{display:inline-flex;align-items:center;gap:5px;font-size:12.5px;color:var(--zc-sub);transition:.2s;padding:2px 4px;border-radius:6px}
+.zc-act:hover{color:var(--zc-acc)}
+.zc-act.zc-on{color:var(--zc-acc)}
+.zc-act.zc-on .zc-ico{transform:scale(1.18)}
+.zc-ico{display:inline-block;transition:.2s}
+.zc-small-list{display:grid;gap:22px;align-content:start}
+.zc-mini-media{display:flex;gap:14px;background:var(--zc-card);border:1px solid var(--zc-line);border-radius:14px;padding:12px;transition:.25s}
+.zc-mini-media:hover{border-color:rgba(103,232,249,.4);transform:translateX(4px)}
+.zc-mini-media .zc-cover{width:148px;flex:none;border-radius:10px}
+.zc-mini-media .zc-cover::after{border-radius:10px}
+.zc-mini-info h4{font-size:14.5px;margin-bottom:6px;line-height:1.45}
+.zc-mini-info p{font-size:12.8px;color:var(--zc-sub);line-height:1.65}
+.zc-mini-info .zc-tags{margin-top:8px}
+
+/* 热门视频流 */
+.zc-filter{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:26px}
+.zc-chip{
+  padding:7px 16px;border-radius:999px;font-size:13px;border:1px solid var(--zc-line);
+  color:var(--zc-sub);transition:.22s;
+}
+.zc-chip:hover{color:#fff;border-color:rgba(103,232,249,.6)}
+.zc-chip.zc-on{background:rgba(103,232,249,.15);color:var(--zc-acc);border-color:rgba(103,232,249,.55)}
+.zc-grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.zc-grid-3 .zc-is-hidden{display:none}
+
+/* 专题 */
+.zc-feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.zc-feature{
+  border-radius:18px;overflow:hidden;border:1px solid var(--zc-line);position:relative;
+  background:var(--zc-card);display:flex;flex-direction:column;transition:.28s;
+}
+.zc-feature:hover{transform:translateY(-5px);box-shadow:0 22px 50px rgba(0,0,0,.5)}
+.zc-feature .zc-cover{aspect-ratio:16/9}
+.zc-feature-body{padding:18px 20px 20px;display:flex;flex-direction:column;gap:10px;flex:1}
+.zc-feature-body h3{font-size:17px}
+.zc-feature-body p{font-size:13.4px;color:var(--zc-sub);flex:1}
+.zc-status{
+  align-self:flex-start;font-size:11.5px;padding:3px 11px;border-radius:999px;
+  background:rgba(251,191,36,.14);color:var(--zc-warm);border:1px solid rgba(251,191,36,.3);
+}
+.zc-status.zc-done{background:rgba(103,232,249,.12);color:var(--zc-acc);border-color:rgba(103,232,249,.3)}
+
+/* 创作者 */
+.zc-creator-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.zc-creator{
+  background:var(--zc-card);border:1px solid var(--zc-line);border-radius:var(--zc-radius);
+  padding:24px 20px;text-align:center;transition:.28s;position:relative;overflow:hidden;
+}
+.zc-creator::before{
+  content:"";position:absolute;left:0;right:0;top:0;height:3px;
+  background:linear-gradient(90deg,var(--zc-acc),var(--zc-acc2));opacity:0;transition:.28s;
+}
+.zc-creator:hover{transform:translateY(-5px);border-color:rgba(167,139,250,.45)}
+.zc-creator:hover::before{opacity:1}
+.zc-creator .zc-avatar{width:62px;height:62px;font-size:22px;margin:0 auto 14px;border-radius:20px}
+.zc-creator h3{font-size:16px;margin-bottom:4px}
+.zc-creator .zc-field{font-size:12.5px;color:var(--zc-acc);margin-bottom:10px}
+.zc-creator p{font-size:12.8px;color:var(--zc-sub);min-height:56px;line-height:1.65}
+.zc-creator-stat{display:flex;justify-content:center;gap:20px;margin:14px 0;font-size:12px;color:var(--zc-sub)}
+.zc-creator-stat b{display:block;color:#fff;font-size:15px}
+.zc-creator-btn{
+  width:100%;padding:8px;border-radius:999px;font-size:13px;font-weight:600;
+  border:1px solid var(--zc-line);color:var(--zc-txt);transition:.22s;
+}
+.zc-creator-btn:hover{background:rgba(103,232,249,.14);border-color:var(--zc-acc);color:var(--zc-acc)}
+
+/* 故事随笔 */
+.zc-story-grid{display:grid;grid-template-columns:1.15fr 1fr;gap:22px}
+.zc-story-main{
+  border-radius:18px;overflow:hidden;position:relative;border:1px solid var(--zc-line);
+  display:flex;flex-direction:column;min-height:340px;
+}
+.zc-story-main .zc-cover{aspect-ratio:16/9;flex:1}
+.zc-story-text{padding:22px 24px;background:var(--zc-card)}
+.zc-story-text h3{font-size:19px;margin-bottom:10px}
+.zc-story-text p{font-size:14px;color:var(--zc-sub);text-align:justify}
+.zc-story-list{display:grid;gap:14px;align-content:start}
+.zc-story-item{
+  background:var(--zc-card);border:1px solid var(--zc-line);border-radius:14px;padding:18px 20px;transition:.25s;
+}
+.zc-story-item:hover{border-color:rgba(103,232,249,.4);background:#18233d}
+.zc-story-item h4{font-size:15.5px;margin-bottom:7px}
+.zc-story-item p{font-size:13.2px;color:var(--zc-sub)}
+.zc-story-item span{display:inline-block;margin-top:10px;font-size:12px;color:var(--zc-acc2)}
+
+/* 作品墙 */
+.zc-wall{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}
+.zc-wall figure{margin:0;border-radius:14px;overflow:hidden;position:relative;border:1px solid var(--zc-line);background:var(--zc-card)}
+.zc-wall img{width:100%;height:100%;object-fit:cover;transition:.45s}
+.zc-wall figure:hover img{transform:scale(1.08)}
+.zc-wall figcaption{
+  position:absolute;left:0;right:0;bottom:0;padding:22px 12px 10px;font-size:12px;color:#fff;
+  background:linear-gradient(180deg,rgba(0,0,0,0),rgba(4,9,20,.86));
+}
+.zc-wall .zc-w1{grid-column:span 3;grid-row:span 2}
+.zc-wall .zc-w2{grid-column:span 2}
+.zc-wall .zc-w3{grid-column:span 1}
+.zc-wall .zc-w4{grid-column:span 2}
+.zc-wall .zc-w5{grid-column:span 2}
+.zc-wall .zc-w6{grid-column:span 2}
+
+/* 评价 */
+.zc-review-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.zc-review{
+  background:var(--zc-card);border:1px solid var(--zc-line);border-radius:var(--zc-radius);
+  padding:22px;display:flex;flex-direction:column;gap:14px;transition:.25s;position:relative;
+}
+.zc-review:hover{transform:translateY(-4px);border-color:rgba(167,139,250,.4)}
+.zc-review-head{display:flex;align-items:center;gap:12px}
+.zc-review-head b{font-size:14px;display:block}
+.zc-review-head span{font-size:11.5px;color:var(--zc-sub)}
+.zc-review p{font-size:13.6px;color:#c6d4ea;line-height:1.8}
+.zc-stars{color:var(--zc-warm);font-size:13px;letter-spacing:2px}
+
+/* 动态 与 榜单 */
+.zc-split{display:grid;grid-template-columns:1.2fr 1fr;gap:34px}
+.zc-timeline{position:relative;padding-left:26px}
+.zc-timeline::before{
+  content:"";position:absolute;left:7px;top:6px;bottom:6px;width:2px;
+  background:linear-gradient(180deg,var(--zc-acc),rgba(167,139,250,.25));
+}
+.zc-timeline li{position:relative;padding-bottom:24px}
+.zc-timeline li:last-child{padding-bottom:0}
+.zc-timeline li::before{
+  content:"";position:absolute;left:-24px;top:8px;width:10px;height:10px;border-radius:50%;
+  background:var(--zc-bg);border:2px solid var(--zc-acc);
+}
+.zc-timeline b{display:block;font-size:15px;margin-bottom:4px}
+.zc-timeline span{font-size:12px;color:var(--zc-acc2)}
+.zc-timeline p{font-size:13.2px;color:var(--zc-sub);margin-top:4px}
+.zc-rank{background:var(--zc-card);border:1px solid var(--zc-line);border-radius:var(--zc-radius);padding:22px}
+.zc-rank h3{font-size:16px;margin-bottom:16px;padding-bottom:12px;border-bottom:1px solid var(--zc-line)}
+.zc-rank li{display:flex;align-items:center;gap:12px;padding:11px 0;border-bottom:1px dashed var(--zc-line);font-size:13.6px}
+.zc-rank li:last-child{border-bottom:0}
+.zc-rank-no{
+  width:22px;height:22px;border-radius:7px;display:grid;place-items:center;font-size:12px;
+  font-weight:700;background:rgba(103,232,249,.14);color:var(--zc-acc);flex:none;
+}
+.zc-rank li:nth-child(1) .zc-rank-no{background:var(--zc-warm);color:#2a1a02}
+.zc-rank li:nth-child(2) .zc-rank-no{background:#cbd5e1;color:#1a2233}
+.zc-rank li:nth-child(3) .zc-rank-no{background:#d69a68;color:#2a1702}
+.zc-rank li span{flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.zc-rank li em{font-style:normal;font-size:12px;color:var(--zc-sub)}
+
+/* FAQ */
+.zc-faq-list{display:grid;gap:12px;max-width:940px;margin:0 auto}
+.zc-faq-list details{
+  background:var(--zc-card);border:1px solid var(--zc-line);border-radius:13px;
+  padding:16px 20px;transition:.22s;
+}
+.zc-faq-list details[open]{border-color:rgba(103,232,249,.45);background:#18233d}
+.zc-faq-list summary{
+  cursor:pointer;font-size:15px;font-weight:600;list-style:none;position:relative;padding-right:26px;
+}
+.zc-faq-list summary::-webkit-details-marker{display:none}
+.zc-faq-list summary::after{
+  content:"+";position:absolute;right:0;top:-2px;font-size:19px;color:var(--zc-acc);transition:.25s;
+}
+.zc-faq-list details[open] summary::after{transform:rotate(45deg)}
+.zc-faq-list details p{margin-top:12px;font-size:13.6px;color:var(--zc-sub);line-height:1.8}
+
+/* 联系 */
+.zc-contact{
+  background:
+    radial-gradient(600px 240px at 12% 0%,rgba(103,232,249,.16),transparent 70%),
+    radial-gradient(600px 280px at 92% 100%,rgba(167,139,250,.18),transparent 70%),
+    var(--zc-bg2);
+  border-top:1px solid var(--zc-line);border-bottom:1px solid var(--zc-line);
+}
+.zc-contact-inner{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
+.zc-contact-txt h2{font-size:clamp(23px,3vw,30px);margin-bottom:14px}
+.zc-contact-txt p{color:var(--zc-sub);font-size:14.5px;max-width:460px;margin-bottom:22px}
+.zc-contact-info{display:grid;gap:10px;font-size:13.8px;color:#c6d4ea}
+.zc-contact-info div{display:flex;gap:10px}
+.zc-contact-info b{color:var(--zc-acc);font-weight:600;min-width:64px}
+.zc-form{
+  background:var(--zc-card);border:1px solid var(--zc-line);border-radius:18px;padding:24px;
+  display:grid;gap:14px;
+}
+.zc-form label{font-size:13px;color:var(--zc-sub);display:grid;gap:6px}
+.zc-form input,.zc-form textarea{
+  background:var(--zc-bg);border:1px solid var(--zc-line);border-radius:10px;
+  padding:10px 13px;color:var(--zc-txt);font-family:inherit;font-size:13.8px;outline:none;transition:.22s;
+}
+.zc-form input:focus,.zc-form textarea:focus{border-color:var(--zc-acc);box-shadow:0 0 0 3px rgba(103,232,249,.1)}
+.zc-form textarea{resize:vertical;min-height:86px}
+.zc-form .zc-btn-main{justify-content:center;margin-top:4px}
+
+/* 页脚 */
+.zc-footer{background:#0a0f1c;border-top:1px solid var(--zc-line);padding:56px 20px 26px}
+.zc-footer-inner{max-width:1240px;margin:0 auto;display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:36px}
+.zc-footer-brand p{font-size:13.2px;color:var(--zc-sub);margin-top:14px;max-width:300px;line-height:1.8}
+.zc-footer h4{font-size:14px;margin-bottom:14px;color:#fff}
+.zc-footer li{font-size:13px;color:var(--zc-sub);margin-bottom:9px}
+.zc-footer li a:hover{color:var(--zc-acc)}
+.zc-footer-bot{
+  max-width:1240px;margin:36px auto 0;padding-top:22px;border-top:1px solid var(--zc-line);
+  display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:12.5px;color:var(--zc-sub);
+}
+
+/* 通用弹窗 & toast */
+.zc-modal-mask{
+  position:fixed;inset:0;background:rgba(4,8,17,.75);backdrop-filter:blur(4px);
+  display:none;align-items:center;justify-content:center;z-index:120;padding:20px;
+}
+.zc-modal-mask.zc-show{display:flex}
+.zc-modal{
+  background:var(--zc-card);border:1px solid var(--zc-line);border-radius:18px;
+  max-width:460px;width:100%;padding:26px;position:relative;box-shadow:0 30px 80px rgba(0,0,0,.65);
+  animation:zcPopup .25s ease;
+}
+@keyframes zcPopup{from{opacity:0;transform:translateY(14px) scale(.97)}to{opacity:1;transform:none}}
+.zc-modal h3{font-size:18px;margin-bottom:12px}
+.zc-modal p{font-size:13.6px;color:var(--zc-sub);line-height:1.8}
+.zc-modal-close{position:absolute;right:14px;top:12px;font-size:18px;color:var(--zc-sub);width:30px;height:30px;border-radius:8px;display:grid;place-items:center}
+.zc-modal-close:hover{background:rgba(255,255,255,.07);color:#fff}
+.zc-modal-tags{display:flex;flex-wrap:wrap;gap:9px;margin-top:18px}
+.zc-modal-tags a{font-size:13px;padding:7px 14px;border-radius:999px;border:1px solid var(--zc-line);color:var(--zc-sub);transition:.2s}
+.zc-modal-tags a:hover{border-color:var(--zc-acc);color:var(--zc-acc)}
+.zc-toast{
+  position:fixed;left:50%;bottom:40px;transform:translate(-50%,24px);opacity:0;
+  background:rgba(22,31,54,.98);border:1px solid rgba(103,232,249,.45);color:#e8eefc;
+  padding:11px 22px;border-radius:999px;font-size:13.5px;z-index:200;transition:.3s;
+  pointer-events:none;box-shadow:0 16px 40px rgba(0,0,0,.5);
+}
+.zc-toast.zc-show{opacity:1;transform:translate(-50%,0)}
+.zc-top{
+  position:fixed;right:24px;bottom:30px;width:46px;height:46px;border-radius:50%;
+  background:linear-gradient(135deg,#67e8f9,#a78bfa);color:#07121f;font-size:18px;font-weight:700;
+  display:grid;place-items:center;box-shadow:0 12px 30px rgba(103,232,249,.28);
+  opacity:0;pointer-events:none;transition:.3s;z-index:90;
+}
+.zc-top.zc-show{opacity:1;pointer-events:auto}
+.zc-top:hover{transform:translateY(-3px)}
+
+/* 响应式 */
+@media(max-width:1080px){
+  .zc-hero-inner{grid-template-columns:1fr;gap:36px}
+  .zc-hero-float{display:none}
+  .zc-grid-3{grid-template-columns:repeat(2,1fr)}
+  .zc-creator-grid{grid-template-columns:repeat(2,1fr)}
+  .zc-feature-grid{grid-template-columns:repeat(2,1fr)}
+  .zc-wall{grid-template-columns:repeat(4,1fr)}
+  .zc-wall .zc-w1{grid-column:span 2}
+  .zc-about-grid,.zc-story-grid,.zc-split,.zc-contact-inner{grid-template-columns:1fr}
+  .zc-footer-inner{grid-template-columns:1fr 1fr}
+}
+@media(max-width:860px){
+  .zc-nav{
+    display:none;position:absolute;left:0;right:0;top:100%;background:#101829;
+    border-bottom:1px solid var(--zc-line);padding:10px;flex-direction:column;gap:2px;
+  }
+  .zc-nav.zc-open{display:flex}
+  .zc-header-inner{position:relative;gap:12px}
+  .zc-burger{display:grid;place-items:center;order:3}
+  .zc-head-tools{order:2;margin-left:auto}
+  .zc-search input{width:150px}
+  .zc-search input:focus{width:170px}
+  .zc-focus-grid{grid-template-columns:1fr}
+  .zc-review-grid{grid-template-columns:1fr}
+  .zc-sec{padding:52px 16px}
+}
+@media(max-width:620px){
+  .zc-grid-3{grid-template-columns:1fr}
+  .zc-feature-grid{grid-template-columns:1fr}
+  .zc-creator-grid{grid-template-columns:1fr}
+  .zc-wall{grid-template-columns:repeat(2,1fr)}
+  .zc-wall .zc-w1,.zc-wall .zc-w2,.zc-wall .zc-w3,.zc-wall .zc-w4,.zc-wall .zc-w5,.zc-wall .zc-w6{grid-column:span 1;grid-row:span 1}
+  .zc-hero-stats{gap:22px}
+  .zc-mini-media .zc-cover{width:118px}
+  .zc-footer-inner{grid-template-columns:1fr}
+  .zc-search{display:none}
+  .zc-notice-inner{font-size:12px}
+  .zc-top{right:16px;bottom:20px}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- 吸顶组：公告条 + 页头 -->
+<div class="zc-sticky-wrap">
+  <div class="zc-notice">
+    <div class="zc-notice-inner">
+      <span class="zc-notice-tag">官方发布</span>
+      <span class="zc-notice-txt">12 月新版字幕工程上线：<b>《城与海之间》中文字幕校对版</b>、<b>《手作十二时》第一季合集</b>、<b>创作者字幕规范 2.0</b> 同步更新，新增 428 条术语条目。</span>
+      <a class="zc-notice-link" href="#zc-updates">查看更新 →</a>
+    </div>
+  </div>
+  <header class="zc-header">
+    <div class="zc-header-inner">
+      <a class="zc-logo" href="#zc-top">
+        <span class="zc-logo-mark">123</span>
+        <span>123中文字幕一区<small>SUBTITLE STUDIO</small></span>
+      </a>
+      <nav class="zc-nav" id="zcNav">
+        <a href="#zc-top" class="zc-is-active">首页</a>
+        <a href="#zc-focus">视频焦点</a>
+        <a href="#zc-hot">热门内容</a>
+        <a href="#zc-topics">专题企划</a>
+        <a href="#zc-creators">创作者</a>
+        <a href="#zc-updates">企业动态</a>
+        <a href="#zc-faq">帮助</a>
+        <a href="#zc-contact">联系</a>
+      </nav>
+      <div class="zc-head-tools">
+        <div class="zc-search" id="zcSearch">
+          <input type="search" id="zcSearchInput" placeholder="搜索字幕专题 / 创作者" aria-label="站内搜索">
+          <button id="zcSearchBtn" aria-label="搜索">⌕</button>
+          <div class="zc-search-tip" id="zcSearchTip"></div>
+        </div>
+        <button class="zc-burger" id="zcBurger" aria-label="展开导航">☰</button>
+      </div>
+    </div>
+  </header>
+</div>
+
+<!-- 首屏 -->
+<section class="zc-hero" id="zc-top">
+  <svg class="zc-hero-bg" viewBox="0 0 1440 620" preserveAspectRatio="none" aria-hidden="true">
+    <defs>
+      <radialGradient id="zcG1" cx="20%" cy="10%" r="60%">
+        <stop offset="0%" stop-color="#67e8f9" stop-opacity=".22"/>
+        <stop offset="100%" stop-color="#0d1220" stop-opacity="0"/>
+      </radialGradient>
+      <radialGradient id="zcG2" cx="86%" cy="80%" r="55%">
+        <stop offset="0%" stop-color="#a78bfa" stop-opacity=".24"/>
+        <stop offset="100%" stop-color="#0d1220" stop-opacity="0"/>
+      </radialGradient>
+      <linearGradient id="zcG3" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#67e8f9" stop-opacity=".5"/>
+        <stop offset="100%" stop-color="#a78bfa" stop-opacity="0"/>
+      </linearGradient>
+    </defs>
+    <rect width="1440" height="620" fill="url(#zcG1)"/>
+    <rect width="1440" height="620" fill="url(#zcG2)"/>
+    <g stroke="url(#zcG3)" stroke-width="1" fill="none" opacity=".5">
+      <path d="M0 470 Q 300 380 620 450 T 1440 400"/>
+      <path d="M0 540 Q 340 440 700 520 T 1440 470"/>
+    </g>
+    <g fill="#67e8f9" opacity=".5">
+      <circle cx="180" cy="120" r="2.4"/><circle cx="420" cy="70" r="1.6"/>
+      <circle cx="960" cy="110" r="2"/><circle cx="1260" cy="180" r="2.6"/>
+      <circle cx="1120" cy="480" r="1.8"/><circle cx="260" cy="420" r="1.6"/>
+    </g>
+  </svg>
+
+  <div class="zc-hero-inner">
+    <div>
+      <span class="zc-hero-tag"><i></i>官方网站 · 中文字幕内容生态</span>
+      <h1>123中文字幕一区</h1>
+      <p class="zc-hero-slogan">让每一句台词，都被准确看见</p>
+      <p class="zc-hero-text">
+        作为深耕中文字幕垂直领域的品牌平台，123中文字幕一区官方网站以专业校对、术语沉淀与创作者协作为核心，
+        为影视爱好者、内容创作者与文化机构提供可信赖的高清字幕内容与创作工具，构建持续运营的原创内容生态。
+      </p>
+      <div class="zc-hero-btns">
+        <a class="zc-btn zc-btn-main" href="#zc-focus">浏览精品内容 →</a>
+        <a class="zc-btn zc-btn-ghost" href="#zc-creators">认识创作者</a>
+        <a class="zc-btn zc-btn-ghost" href="#zc-contact">合作与投稿</a>
+      </div>
+      <div class="zc-hero-stats">
+        <div class="zc-stat"><b data-zc-count="12860">0</b><span>累计字幕条目</span></div>
+        <div class="zc-stat"><b data-zc-count="742">0</b><span>入驻创作者</span></div>
+        <div class="zc-stat"><b data-zc-count="316">0</b><span>专题企划期数</span></div>
+      </div>
+    </div>
+    <div class="zc-hero-visual">
+      <div class="zc-hero-main">
+        <span class="zc-hero-badge">本期主推 · 官方出品</span>
+        <img alt="123中文字幕一区品牌主视觉：字幕时间轴与多语言台词层叠的画面" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 500'%3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%230b1830'/%3E%3Cstop offset='1' stop-color='%231c2c50'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%2367e8f9'/%3E%3Cstop offset='1' stop-color='%23a78bfa'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='500' fill='url(%23a)'/%3E%3Cg opacity='.28' stroke='%2367e8f9' fill='none'%3E%3Cpath d='M0 120H800M0 240H800M0 360H800'/%3E%3C/g%3E%3Crect x='70' y='150' width='440' height='16' rx='8' fill='url(%23b)' opacity='.85'/%3E%3Crect x='70' y='190' width='300' height='12' rx='6' fill='%239fb0cc' opacity='.7'/%3E%3Crect x='70' y='226' width='380' height='12' rx='6' fill='%239fb0cc' opacity='.45'/%3E%3Crect x='70' y='262' width='220' height='12' rx='6' fill='%239fb0cc' opacity='.3'/%3E%3Cg%3E%3Ccircle cx='640' cy='200' r='86' fill='none' stroke='%2367e8f9' stroke-width='2' opacity='.5'/%3E%3Ccircle cx='640' cy='200' r='58' fill='none' stroke='%23a78bfa' stroke-width='2' opacity='.7'/%3E%3Cpath d='M624 178l36 22-36 22z' fill='%2367e8f9'/%3E%3C/g%3E%3Cg stroke='%2367e8f9' stroke-width='3'%3E%3Cpath d='M70 400h660' opacity='.25'/%3E%3C/g%3E%3Cg fill='%23fbbf24'%3E%3Ccircle cx='150' cy='400' r='6'/%3E%3Ccircle cx='330' cy='400' r='6'/%3E%3Ccircle cx='540' cy='400' r='6'/%3E%3C/g%3E%3C/svg%3E">
+      </div>
+      <div class="zc-hero-float">
+        <img alt="字幕校对工作台夜间视图的缩略画面" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 200'%3E%3Crect width='320' height='200' fill='%23151f38'/%3E%3Crect x='24' y='28' width='160' height='10' rx='5' fill='%2367e8f9'/%3E%3Crect x='24' y='50' width='212' height='8' rx='4' fill='%239fb0cc' opacity='.6'/%3E%3Crect x='24' y='70' width='128' height='8' rx='4' fill='%239fb0cc' opacity='.4'/%3E%3Crect x='24' y='104' width='272' height='60' rx='8' fill='%230d1220' stroke='%232c3f74'/%3E%3Crect x='38' y='122' width='150' height='6' rx='3' fill='%23a78bfa'/%3E%3Crect x='38' y='138' width='96' height='6' rx='3' fill='%2367e8f9' opacity='.6'/%3E%3C/svg%3E">
+        <p>校对工作台 · 实时协作</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 深度解析 -->
+<section class="zc-sec zc-about" id="zc-about">
+  <div class="zc-sec-head">
+    <div>
+      <div class="zc-sec-kicker">BRAND INSIGHT</div>
+      <h2 class="zc-sec-title">关于 123中文字幕一区：我们如何理解「字幕」这件事</h2>
+      <p class="zc-sec-desc">一个品牌的深度，来自它对细节的长期投入。字幕看似只是画面下方的一行小字，实则是跨语言理解、文化转译与观看体验的交汇点。</p>
+    </div>
+  </div>
+  <div class="zc-about-grid">
+    <div class="zc-prose">
+      <p>123中文字幕一区官方网站自建立之初，就明确了自身的定位：我们不是单纯的资源聚合页，而是围绕「中文字幕」这一垂直领域持续深耕的内容品牌与创作平台。企业以专业校对流程、术语库沉淀、创作者协作体系为三大支柱，把零散的字幕制作行为，转化为可被追溯、可被评价、可被复用的品质内容资产。</p>
+      <p>很多用户第一次接触字幕，是因为某部作品的语言门槛；但真正留下来的用户，往往是因为在这里找到了对「准确」的共同追求。一句台词的语气词如何处理，一个行业术语该译作注释还是直译，一句双关中隐含的幽默如何在不破坏节奏的前提下传达——这些判断构成了中文字幕内容生态中最细腻也最容易被忽略的部分。品牌希望把这些判断公开化、专业化，让字幕从幕后走向台前。</p>
+      <h3>一、专业校对：从「能看懂」到「看得舒服」</h3>
+      <p>平台建立了三层校对机制：初稿由创作者完成，二审由具备相关领域背景的校对志愿者承担，终审由官方编辑团队把关。三层之间并非简单的逐级审批，而是带有反馈回路的质量循环。每一条被修改的字幕、每一条被驳回的术语建议，都会进入公开可查的修订记录，形成对后来者的参考。这种机制让高品质内容的产出不再依赖个别经验丰富的创作者，而成为组织能力的一部分，也让「专业」二字有了可验证的落点。</p>
+      <p>与此同时，官方团队维护着一套持续扩充的术语条目库，覆盖科技、医疗、法律、艺术、体育等常见领域，并提供逐条释义与使用场景说明。创作者在制作过程中可直接引用，减少重复劳动，也降低了不同作品之间术语表达不一致的概率。对垂直领域内容而言，这种一致性本身就是口碑的来源。</p>
+      <h3>二、内容生态：让创作者被看见，也让观众参与其中</h3>
+      <p>我们相信内容生态的活力不来自单方面的输出，而来自双向的参与。平台为创作者提供字幕工程模板、时间轴对齐工具、术语检索与作品发布面板；为观众提供纠错建议、术语讨论、专题投票与作品墙展示。用户不再只是内容的接收方，也可以成为校对建议的提出者、专题方向的投票者、甚至新一期企划的共同策划者。这种多元、包容的协作关系，让社区在持续运营中保持真实的温度。</p>
+      <p>在内容方向上，平台鼓励日常记录、经验分享、教程干货、深度测评、人物访谈、城市探索、在地文化、创作幕后等多种题材并行。我们不认为只有宏大叙事才值得被记录，一次深夜的字幕打磨过程、一段关于方言翻译的争论、一位创作者从零开始学习时间轴对齐的经历，同样构成品牌故事中不可缺少的片段。真实，是内容能够产生陪伴感的前提。</p>
+      <h3>三、品牌理念：准确、克制、长期主义</h3>
+      <p>123中文字幕一区把「准确」放在第一位，把「克制」作为方法，把「长期主义」作为节奏。准确意味着不为了流畅牺牲信息，克制意味着不为炫技增加不必要的注释，长期主义意味着愿意花时间把一套术语库、一套校对规范、一批创作者慢慢养起来。行业领先从来不是口号，而是由一个个具体条目累积出的信任。</p>
+      <p>面向未来，品牌将持续投入内容生态建设：扩展专题企划的题材宽度，增加创作者成长扶持计划，完善作品墙与榜单的评价维度，并以官方发布的形式定期公开更新日志。我们希望这个官方网站不只是一个入口，更是一份可以被反复翻阅的行业档案。品质、匠心、创新与责任，将贯穿每一次内容更新与每一次功能迭代。</p>
+    </div>
+    <div class="zc-about-cards">
+      <div class="zc-about-card">
+        <b>三层校对机制</b>
+        <p>初稿、二审、终审环环相扣，修订记录公开可查，让每一条字幕都有来处、有依据。</p>
+      </div>
+      <div class="zc-about-card">
+        <b>术语条目库</b>
+        <p>覆盖科技、医疗、法律、艺术等领域的术语释义与使用场景，持续扩充，开放引用。</p>
+      </div>
+      <div class="zc-about-card">
+        <b>创作者扶持计划</b>
+        <p>从模板工具到专题联合企划，为新人创作者提供可成长的路径与真实曝光机会。</p>
+      </div>
+      <div class="zc-about-card">
+        <b>社区共治</b>
+        <p>纠错建议、术语讨论、专题投票并行，让用户与创作者共同决定内容生态的走向。</p>
+      </div>
+      <div class="zc-about-card">
+        <b>官方发布节奏</b>
+        <p>每月公开更新日志与企划进度，保持透明，让持续运营成为一种可被感知的承诺。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 焦点内容 -->
+<section class="zc-sec" id="zc-focus">
+  <div class="zc-sec-head">
+    <div>
+      <div class="zc-sec-kicker">FOCUS CONTENT</div>
+      <h2 class="zc-sec-title">视频焦点：本期官方精选</h2>
+      <p class="zc-sec-desc">由官方编辑团队与创作者联合推荐，聚焦字幕工艺、文化转译与真实创作现场。</p>
+    </div>
+    <a class="zc-more" href="#zc-hot">全部精品内容 →</a>
+  </div>
+  <div class="zc-focus-grid">
+    <article class="zc-video-card">
+      <div class="zc-cover">
+        <span class="zc-cover-tag">深度企划</span>
+        <span class="zc-cover-play">▶</span>
+        <span class="zc-cover-dur">42:16</span>
+        <img alt="《城与海之间》中文字幕校对纪实：码头夜景与字幕时间轴叠加画面" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Cdefs%3E%3ClinearGradient id='s1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%230f2440'/%3E%3Cstop offset='.55' stop-color='%231b3a5c'/%3E%3Cstop offset='1' stop-color='%23335a7a'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='360' fill='url(%23s1)'/%3E%3Ccircle cx='500' cy='90' r='44' fill='%23fbbf24' opacity='.55'/%3E%3Cpath d='M0 250 Q160 210 320 246 T640 236V360H0z' fill='%230a1830' opacity='.85'/%3E%3Cg stroke='%2367e8f9' stroke-width='2' opacity='.5'%3E%3Cpath d='M40 300h560'/%3E%3Cpath d='M70 316h180M280 316h120M430 316h150'/%3E%3C/g%3E%3Cg fill='%23fbbf24'%3E%3Ccircle cx='120' cy='250' r='4'/%3E%3Ccircle cx='300' cy='246' r='4'/%3E%3Ccircle cx='470' cy='240' r='4'/%3E%3C/g%3E%3Crect x='60' y='120' width='230' height='10' rx='5' fill='%2367e8f9' opacity='.85'/%3E%3Crect x='60' y='146' width='150' height='8' rx='4' fill='%23cfe0ff' opacity='.6'/%3E%3C/svg%3E">
+      </div>
+      <div class="zc-video-body">
+        <h3>《城与海之间》：一部方言作品的中文字幕重译全记录</h3>
+        <p>从初稿的直译到终审的语感重构，本片记录了官方编辑团队与三位创作者围绕一部方言题材作品展开的 17 天重译过程，包含 62 处修订讨论与 9 次术语争议的完整复盘。</p>
+        <div class="zc-tags"><span class="zc-tag">创作幕后</span><span class="zc-tag">文化访谈</span><span class="zc-tag">官方出品</span></div>
+        <div class="zc-meta">
+          <span class="zc-author"><span class="zc-avatar" style="background:linear-gradient(135deg,#67e8f9,#a78bfa)">编</span>官方编辑组</span>
+          <div class="zc-actions">
+            <button class="zc-act" data-zc-like><span class="zc-ico">♡</span><span data-zc-like-num>2841</span></button>
+            <button class="zc-act" data-zc-fav><span class="zc-ico">☆</span>收藏</button>
+            <button class="zc-act" data-zc-share><span class="zc-ico">⇪</span>分享</button>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <div class="zc-small-list">
+      <article class="zc-mini-media">
+        <div class="zc-cover">
+          <span class="zc-cover-play">▶</span>
+          <img alt="《手作十二时》第一季合集：木工台与字幕条并置的封面" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 180'%3E%3Crect width='320' height='180' fill='%23261d16'/%3E%3Crect x='0' y='120' width='320' height='60' fill='%233b2c20'/%3E%3Cg fill='%23d69a68'%3E%3Crect x='40' y='70' width='90' height='12' rx='4'/%3E%3Crect x='60' y='52' width='14' height='42' rx='3'/%3E%3Crect x='140' y='86' width='60' height='8' rx='4' opacity='.7'/%3E%3C/g%3E%3Ccircle cx='250' cy='60' r='30' fill='none' stroke='%23fbbf24' stroke-width='2' opacity='.6'/%3E%3Crect x='30' y='24' width='120' height='8' rx='4' fill='%23fbbf24' opacity='.8'/%3E%3C/svg%3E">
+        </div>
+        <div class="zc-mini-info">
+          <h4>《手作十二时》第一季合集：工艺类字幕术语全解析</h4>
+          <p>12 集手作纪录短片的字幕制作复盘，含 200+ 工艺术语对照。</p>
+          <div class="zc-tags"><span class="zc-tag">手作DIY</span><span class="zc-tag">教程干货</span></div>
+        </div>
+      </article>
+      <article class="zc-mini-media">
+        <div class="zc-cover">
+          <span class="zc-cover-play">▶</span>
+          <img alt="城市夜间街景与实时字幕流叠加的封面画面" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 180'%3E%3Crect width='320' height='180' fill='%230d1a2c'/%3E%3Cg fill='%231e3350'%3E%3Crect x='20' y='60' width='40' height='120'/%3E%3Crect x='72' y='40' width='34' height='140'/%3E%3Crect x='118' y='76' width='46' height='104'/%3E%3Crect x='176' y='54' width='30' height='126'/%3E%3Crect x='218' y='84' width='52' height='96'/%3E%3C/g%3E%3Cg fill='%2367e8f9' opacity='.8'%3E%3Crect x='28' y='72' width='8' height='8'/%3E%3Crect x='44' y='72' width='8' height='8'/%3E%3Crect x='80' y='56' width='8' height='8'/%3E%3Crect x='130' y='92' width='8' height='8'/%3E%3Crect x='226' y='100' width='8' height='8'/%3E%3C/g%3E%3Crect x='20' y='146' width='200' height='10' rx='5' fill='%23a78bfa' opacity='.85'/%3E%3C/svg%3E">
+        </div>
+        <div class="zc-mini-info">
+          <h4>深夜街拍与实时字幕：城市探索者的影像笔记</h4>
+          <p>四位创作者用一周时间记录城市夜行，字幕成为叙事的一部分。</p>
+          <div class="zc-tags"><span class="zc-tag">城市探索</span><span class="zc-tag">日常记录</span></div>
+        </div>
+      </article>
+      <article class="zc-mini-media">
+        <div class="zc-cover">
+          <span class="zc-cover-play">▶</span>
+          <img alt="术语词典页面与放大镜插画的封面" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 180'%3E%3Crect width='320' height='180' fill='%23151f38'/%3E%3Crect x='40' y='30' width='240' height='120' rx='8' fill='%230d1220' stroke='%232c3f74'/%3E%3Cg stroke='%2367e8f9' stroke-width='5' opacity='.75'%3E%3Cpath d='M64 58h150M64 82h120M64 106h170M64 130h96'/%3E%3C/g%3E%3Ccircle cx='236' cy='120' r='30' fill='none' stroke='%23fbbf24' stroke-width='4'/%3E%3Cpath d='M258 142l26 26' stroke='%23fbbf24' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E">
+        </div>
+        <div class="zc-mini-info">
+          <h4>术语库 2.0 使用指南：检索、引用与协作流程</h4>
+          <p>官方产品团队讲解新版术语库的检索逻辑与团队协作能力。</p>
+          <div class="zc-tags"><span class="zc-tag">实用技巧</span><span class="zc-tag">知识科普</span></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 热门视频流 -->
+<section class="zc-sec" id="zc-hot" style="padding-top:20px">
+  <div class="zc-sec-head">
+    <div>
+      <div class="zc-sec-kicker">TRENDING FEED</div>
+      <h2 class="zc-sec-title">热门视频流：社区正在讨论的内容</h2>
+      <p class="zc-sec-desc">点击标签可筛选内容方向，所有卡片支持点赞、收藏与分享操作。</p>
+    </div>
+    <a class="zc-more" href="#zc-topics">看专题企划 →</a>
+  </div>
+  <div class="zc-filter" id="zcFilter">
+    <button class="zc-chip zc-on" data-zc-filter="all">全部</button>
+    <button class="zc-chip" data-zc-filter="tour">教程干货</button>
+    <button class="zc-chip" data-zc-filter="life">日常记录</button>
+    <button class="zc-chip" data-zc-filter="talk">人物访谈</button>
+    <button class="zc-chip" data-zc-filter="city">城市探索</button>
+    <button class="zc-chip" data-zc-filter="tech">科技前沿</button>
+  </div>
+  <div class="zc-grid-3" id="zcHotGrid">
+    <article class="zc-video-card" data-zc-cat="tour">
+      <div class="zc-cover">
+        <span class="zc-cover-tag">教程</span><span class="zc-cover-play">▶</span><span class="zc-cover-dur">18:42</span>
+        <img alt="时间轴对齐入门教程的封面：轨道条与波形图" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%23101a2e'/%3E%3Cg fill='%231d2d4a'%3E%3Crect x='30' y='40' width='420' height='26' rx='6'/%3E%3Crect x='30' y='78' width='420' height='26' rx='6'/%3E%3Crect x='30' y='116' width='420' height='26' rx='6'/%3E%3C/g%3E%3Cg fill='%2367e8f9'%3E%3Crect x='50' y='46' width='86' height='14' rx='4'/%3E%3Crect x='152' y='46' width='54' height='14' rx='4'/%3E%3Crect x='90' y='84' width='130' height='14' rx='4'/%3E%3Crect x='240' y='84' width='76' height='14' rx='4'/%3E%3Crect x='60' y='122' width='104' height='14' rx='4'/%3E%3C/g%3E%3Cpath d='M60 190l20-24 20 24 20-34 20 34 20-20 20 20 20-30 20 30 20-16 20 16' stroke='%23a78bfa' stroke-width='2' fill='none'/%3E%3C/svg%3E">
+      </div>
+      <div class="zc-video-body">
+        <h3>零基础学时间轴对齐：从 3 秒误差到逐帧校准</h3>
+        <p>一次完整的实操演示，讲清帧率差异、音画偏移与批量微调的常见坑。</p>
+        <div class="zc-tags"><span class="zc-tag">教程干货</span><span class="zc-tag">实用技巧</span></div>
+        <div class="zc-meta">
+          <span class="zc-author"><span class="zc-avatar" style="background:#67e8f9">阿</span>阿岚的工作台</span>
+          <div class="zc-actions">
+            <button class="zc-act" data-zc-like><span class="zc-ico">♡</span><span data-zc-like-num>1268</span></button>
+            <button class="zc-act" data-zc-fav><span class="zc-ico">☆</span>收藏</button>
+            <button class="zc-act" data-zc-share><span class="zc-ico">⇪</span>分享</button>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="zc-video-card" data-zc-cat="life">
+      <div class="zc-cover">
+        <span class="zc-cover-tag">日常</span><span class="zc-cover-play">▶</span><span class="zc-cover-dur">12:08</span>
+        <img alt="清晨书桌与字幕草稿的日常记录封面" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Cdefs%3E%3ClinearGradient id='d1' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23f6e3c5'/%3E%3Cstop offset='1' stop-color='%23d9b58c'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='480' height='270' fill='url(%23d1)'/%3E%3Crect x='0' y='188' width='480' height='82' fill='%23a97e50'/%3E%3Crect x='70' y='130' width='150' height='66' rx='5' fill='%23fdf6ea' transform='rotate(-4 70 130)'/%3E%3Cg stroke='%23b08a5f' stroke-width='4'%3E%3Cpath d='M86 150h96M86 164h70M86 178h112'/%3E%3C/g%3E%3Ccircle cx='330' cy='96' r='42' fill='%23f8b26a' opacity='.8'/%3E%3Crect x='290' y='150' width='120' height='12' rx='6' fill='%236b4a2e' opacity='.6'/%3E%3C/svg%3E">
+      </div>
+      <div class="zc-video-body">
+        <h3>我在家做字幕的第 400 天：一张书桌的日常</h3>
+        <p>记录独立创作者一天的工作节奏，包含选题、校对与发布的全流程。</p>
+        <div class="zc-tags"><span class="zc-tag">日常记录</span><span class="zc-tag">创作幕后</span></div>
+        <div class="zc-meta">
+          <span class="zc-author"><span class="zc-avatar" style="background:#fbbf24">言</span>言午手记</span>
+          <div class="zc-actions">
+            <button class="zc-act" data-zc-like><span class="zc-ico">♡</span><span data-zc-like-num>2044</span></button>
+            <button class="zc-act" data-zc-fav><span class="zc-ico">☆</span>收藏</button>
+            <button class="zc-act" data-zc-share><span class="zc-ico">⇪</span>分享</button>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="zc-video-card" data-zc-cat="talk">
+      <div class="zc-cover">
+        <span class="zc-cover-tag">访谈</span><span class="zc-cover-play">▶</span><span class="zc-cover-dur">36:50</span>
+        <img alt="人物访谈现场双人对话与字幕条的封面" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%23172233'/%3E%3Ccircle cx='150' cy='120' r='52' fill='%23273b5c'/%3E%3Ccircle cx='330' cy='120' r='52' fill='%232f3f63'/%3E%3Cpath d='M96 210c0-34 24-54 54-54s54 20 54 54z' fill='%23273b5c'/%3E%3Cpath d='M276 210c0-34 24-54 54-54s54 20 54 54z' fill='%232f3f63'/%3E%3Crect x='90' y='228' width='300' height='14' rx='7' fill='%2367e8f9' opacity='.85'/%3E%3Cg fill='%23a78bfa'%3E%3Ccircle cx='150' cy='104' r='5'/%3E%3Ccircle cx='330' cy='104' r='5'/%3E%3C/g%3E%3C/svg%3E">
+      </div>
+      <div class="zc-video-body">
+        <h3>对话资深译制编辑：字幕行业的十年变化</h3>
+        <p>聊工具、聊规范、聊观众审美变化，也聊从业者如何保持耐心。</p>
+        <div class="zc-tags"><span class="zc-tag">人物访谈</span><span class="zc-tag">行业观察</span></div>
+        <div class="zc-meta">
+          <span class="zc-author"><span class="zc-avatar" style="background:#a78bfa">叙</span>叙事者频道</span>
+          <div class="zc-actions">
+            <button class="zc-act" data-zc-like><span class="zc-ico">♡</span><span data-zc-like-num>1735</span></button>
+            <button class="zc-act" data-zc-fav><span class="zc-ico">☆</span>收藏</button>
+            <button class="zc-act" data-zc-share><span class="zc-ico">⇪</span>分享</button>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="zc-video-card" data-zc-cat="city">
+      <div class="zc-cover">
+        <span class="zc-cover-tag">城市</span><span class="zc-cover-play">▶</span><span class="zc-cover-dur">22:31</span>
+        <img alt="老城区骑楼街景与方言字幕的封面画面" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%23cfe3f2'/%3E%3Crect x='0' y='0' width='480' height='120' fill='%23b5d4ea'/%3E%3Cg fill='%23e9dcc8'%3E%3Crect x='20' y='100' width='120' height='170'/%3E%3Crect x='150' y='80' width='90' height='190'/%3E%3Crect x='250' y='110' width='110' height='160'/%3E%3Crect x='370' y='90' width='96' height='180'/%3E%3C/g%3E%3Cg fill='%239c7b52'%3E%3Crect x='36' y='120' width='28' height='40'/%3E%3Crect x='90' y='120' width='28' height='40'/%3E%3Crect x='164' y='104' width='26' height='34'/%3E%3Crect x='210' y='104' width='26' height='34'/%3E%3Crect x='268' y='130' width='30' height='42'/%3E%3Crect x='388' y='112' width='28' height='38'/%3E%3C/g%3E%3Crect x='0' y='230' width='480' height='40' fill='%23a99573'/%3E%3Crect x='60' y='242' width='240' height='10' rx='5' fill='%23ffffff' opacity='.85'/%3E%3C/svg%3E">
+      </div>
+      <div class="zc-video-body">
+        <h3>老城骑楼下的方言字幕：一次在地文化田野记录</h3>
+        <p>走访三位本地讲述者，尝试为方言口述历史配上可读性更强的中文字幕。</p>
+        <div class="zc-tags"><span class="zc-tag">城市探索</span><span class="zc-tag">在地文化</span></div>
+        <div class="zc-meta">
+          <span class="zc-author"><span class="zc-avatar" style="background:#34d399">城</span>城南影像社</span>
+          <div class="zc-actions">
+            <button class="zc-act" data-zc-like><span class="zc-ico">♡</span><span data-zc-like-num>1987</span></button>
+            <button class="zc-act" data-zc-fav><span class="zc-ico">☆</span>收藏</button>
+            <button class="zc-act" data-zc-share><span class="zc-ico">⇪</span>分享</button>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="zc-video-card" data-zc-cat="tech">
+      <div class="zc-cover">
+        <span class="zc-cover-tag">科技</span><span class="zc-cover-play">▶</span><span class="zc-cover-dur">15:24</span>
+        <img alt="语音识别波形与字幕生成面板的科技感封面" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%230a1320'/%3E%3Cg stroke='%2367e8f9' stroke-width='2' opacity='.55'%3E%3Cpath d='M0 60H480M0 120H480M0 180H480M0 240H480'/%3E%3Cpath d='M80 0V270M200 0V270M320 0V270M440 0V270'/%3E%3C/g%3E%3Cpolyline points='20,180 60,140 100,190 140,100 180,160 220,80 260,150 300,110 340,185 380,120 420,165 460,95' fill='none' stroke='%23a78bfa' stroke-width='3'/%3E%3Crect x='120' y='200' width='240' height='12' rx='6' fill='%2367e8f9' opacity='.8'/%3E%3Ccircle cx='390' cy='70' r='26' fill='none' stroke='%23fbbf24' stroke-width='2'/%3E%3C/svg%3E">
+      </div>
+      <div class="zc-video-body">
+        <h3>语音识别辅助字幕：效率提升与人工校对边界</h3>
+        <p>实测三类素材的识别准确率，并给出人机协作的推荐工作流。</p>
+        <div class="zc-tags"><span class="zc-tag">科技前沿</span><span class="zc-tag">深度测评</span></div>
+        <div class="zc-meta">
+          <span class="zc-author"><span class="zc-avatar" style="background:#60a5fa">码</span>码上谈内容</span>
+          <div class="zc-actions">
+            <button class="zc-act" data-zc-like><span class="zc-ico">♡</span><span data-zc-like-num>1123</span></button>
+            <button class="zc-act" data-zc-fav><span class="zc-ico">☆</span>收藏</button>
+            <button class="zc-act" data-zc-share><span class="zc-ico">⇪</span>分享</button>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="zc-video-card" data-zc-cat="tour">
+      <div class="zc-cover">
+        <span class="zc-cover-tag">教程</span><span class="zc-cover-play">▶</span><span class="zc-cover-dur">26:05</span>
+        <img alt="字幕样式设计教程封面：字体排版与配色示例" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%23f4f1ea'/%3E%3Crect x='30' y='30' width='190' height='98' rx='8' fill='%23222a3a'/%3E%3Ctext x='52' y='86' font-family='sans-serif' font-size='30' fill='%2367e8f9'%3E字幕%3C/text%3E%3Crect x='240' y='30' width='190' height='98' rx='8' fill='%23ffffff' stroke='%23d8d2c4'/%3E%3Ctext x='262' y='86' font-family='sans-serif' font-size='30' fill='%231f2937'%3E排版%3C/text%3E%3Crect x='30' y='150' width='400' height='90' rx='8' fill='%23e4ddcf'/%3E%3Cg fill='%237a6a52'%3E%3Crect x='52' y='172' width='150' height='10' rx='5'/%3E%3Crect x='52' y='196' width='220' height='10' rx='5' opacity='.7'/%3E%3Crect x='52' y='220' width='120' height='10' rx='5' opacity='.45'/%3E%3C/g%3E%3C/svg%3E">
+      </div>
+      <div class="zc-video-body">
+        <h3>字幕样式设计：字号、描边与留白的可读性法则</h3>
+        <p>从可读性测试出发，给出移动端与电视端的两套字幕样式方案。</p>
+        <div class="zc-tags"><span class="zc-tag">教程干货</span><span class="zc-tag">艺术美学</span></div>
+        <div class="zc-meta">
+          <span class="zc-author"><span class="zc-avatar" style="background:#f472b6">字</span>字研所</span>
+          <div class="zc-actions">
+            <button class="zc-act" data-zc-like><span class="zc-ico">♡</span><span data-zc-like-num>962</span></button>
+            <button class="zc-act" data-zc-fav><span class="zc-ico">☆</span>收藏</button>
+            <button class="zc-act" data-zc-share><span class="zc-ico">⇪</span>分享</button>
+          </div>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- 专题企划 -->
+<section class="zc-sec" id="zc-topics" style="padding-top:20px">
+  <div class="zc-sec-head">
+    <div>
+      <div class="zc-sec-kicker">SERIES &amp; PROJECTS</div>
+      <h2 class="zc-sec-title">专题企划：围绕一个主题做深做透</h2>
+      <p class="zc-sec-desc">每期专题由官方发起、创作者共建，更新状态实时公开。</p>
+    </div>
+    <a class="zc-more" href="#zc-updates">企划进度 →</a>
+  </div>
+  <div class="zc-feature-grid">
+    <article class="zc-feature">
+      <div class="zc-cover">
+        <span class="zc-cover-tag">专题 01</span>
+        <img alt="方言与普通话字幕对照专题的封面：声波与文字并置" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%2314243a'/%3E%3Cg stroke='%2367e8f9' stroke-width='3' opacity='.7'%3E%3Cpath d='M40 150q10-40 20 0t20 0 20-30 20 30 20 0 20-40 20 40 20 0 20-20 20 20 20-30 20 30 20 0'/%3E%3C/g%3E%3Cg fill='%23fbbf24'%3E%3Crect x='60' y='60' width='90' height='9' rx='4'/%3E%3Crect x='60' y='80' width='150' height='9' rx='4' opacity='.6'/%3E%3C/g%3E%3Crect x='60' y='212' width='330' height='12' rx='6' fill='%23a78bfa' opacity='.85'/%3E%3C/svg%3E">
+      </div>
+      <div class="zc-feature-body">
+        <h3>方言与普通话字幕对照计划</h3>
+        <p>联合 18 位在地创作者，为方言口述影像建立双语对照字幕，已完成 9 个地区、合计 340 分钟素材。</p>
+        <span class="zc-status">更新中 · 第 3 期</span>
+      </div>
+    </article>
+    <article class="zc-feature">
+      <div class="zc-cover">
+        <span class="zc-cover-tag">专题 02</span>
+        <img alt="字幕里的术语专题封面：词典页与放大镜插画" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%231a1730'/%3E%3Crect x='48' y='40' width='240' height='190' rx='10' fill='%23241f45'/%3E%3Cg stroke='%23c4b5fd' stroke-width='5' opacity='.8'%3E%3Cpath d='M76 74h180M76 104h140M76 134h170M76 164h110M76 194h150'/%3E%3C/g%3E%3Ccircle cx='340' cy='130' r='46' fill='none' stroke='%2367e8f9' stroke-width='5'/%3E%3Cpath d='M374 164l34 34' stroke='%2367e8f9' stroke-width='8' stroke-linecap='round'/%3E%3C/svg%3E">
+      </div>
+      <div class="zc-feature-body">
+        <h3>术语条目库 2.0 共建行动</h3>
+        <p>面向全站开放术语提交入口，两个月内收到 1740 条建议，已有 428 条通过评审入库。</p>
+        <span class="zc-status">征集中 · 报名开放</span>
+      </div>
+    </article>
+    <article class="zc-feature">
+      <div class="zc-cover">
+        <span class="zc-cover-tag">专题 03</span>
+        <img alt="十二小时创作挑战专题封面：时钟与剪辑轨道" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%23f6efe3'/%3E%3Ccircle cx='240' cy='126' r='72' fill='none' stroke='%23b8894f' stroke-width='6'/%3E%3Cg stroke='%23b8894f' stroke-width='5' stroke-linecap='round'%3E%3Cpath d='M240 126V82M240 126l34 22'/%3E%3C/g%3E%3Cg fill='%23e0cdb2'%3E%3Crect x='40' y='220' width='120' height='14' rx='7'/%3E%3Crect x='180' y='220' width='90' height='14' rx='7'/%3E%3Crect x='290' y='220' width='150' height='14' rx='7'/%3E%3C/g%3E%3Ctext x='200' y='250' font-family='sans-serif' font-size='18' fill='%238a6a41'%3E12 HOURS%3C/text%3E%3C/svg%3E">
+      </div>
+      <div class="zc-feature-body">
+        <h3>十二小时字幕挑战赛</h3>
+        <p>给定一段 8 分钟无字幕素材，创作者需在 12 小时内完成翻译、校对与样式设计，作品进入投票环节。</p>
+        <span class="zc-status zc-done">已结束 · 查看结果</span>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- 创作者矩阵 -->
+<section class="zc-sec" id="zc-creators" style="padding-top:20px">
+  <div class="zc-sec-head">
+    <div>
+      <div class="zc-sec-kicker">CREATOR MATRIX</div>
+      <h2 class="zc-sec-title">创作者矩阵：这些人让字幕有温度</h2>
+      <p class="zc-sec-desc">点击「查看档案」可了解创作者擅长领域与合作方式。</p>
+    </div>
+  </div>
+  <div class="zc-creator-grid" id="zcCreatorGrid">
+    <article class="zc-creator">
+      <span class="zc-avatar" style="background:linear-gradient(135deg,#67e8f9,#3b82f6)">阿</span>
+      <h3>阿岚的工作台</h3>
+      <div class="zc-field">教程 / 工具流</div>
+      <p>专注时间轴与工作流效率，擅长把复杂操作拆成可复用步骤。</p>
+      <div class="zc-creator-stat"><div><b>128</b>作品</div><div><b>4.2万</b>关注</div></div>
+      <button class="zc-creator-btn" data-zc-creator="阿岚的工作台" data-zc-field="教程 / 工具流">查看档案</button>
+    </article>
+    <article class="zc-creator">
+      <span class="zc-avatar" style="background:linear-gradient(135deg,#fbbf24,#f97316)">言</span>
+      <h3>言午手记</h3>
+      <div class="zc-field">日常 / 随笔影像</div>
+      <p>记录独立创作者的日常节奏，作品节奏舒缓，重视真实细节。</p>
+      <div class="zc-creator-stat"><div><b>96</b>作品</div><div><b>3.6万</b>关注</div></div>
+      <button class="zc-creator-btn" data-zc-creator="言午手记" data-zc-field="日常 / 随笔影像">查看档案</button>
+    </article>
+    <article class="zc-creator">
+      <span class="zc-avatar" style="background:linear-gradient(135deg,#a78bfa,#7c3aed)">叙</span>
+      <h3>叙事者频道</h3>
+      <div class="zc-field">人物访谈 / 行业观察</div>
+      <p>长期采访译制与内容行业从业者，擅长把专业话题讲得平实。</p>
+      <div class="zc-creator-stat"><div><b>74</b>作品</div><div><b>5.1万</b>关注</div></div>
+      <button class="zc-creator-btn" data-zc-creator="叙事者频道" data-zc-field="人物访谈 / 行业观察">查看档案</button>
+    </article>
+    <article class="zc-creator">
+      <span class="zc-avatar" style="background:linear-gradient(135deg,#34d399,#059669)">城</span>
+      <h3>城南影像社</h3>
+      <div class="zc-field">城市探索 / 在地文化</div>
+      <p>以方言与地方口述历史为线索，持续记录老城区的日常影像。</p>
+      <div class="zc-creator-stat"><div><b>110</b>作品</div><div><b>2.9万</b>关注</div></div>
+      <button class="zc-creator-btn" data-zc-creator="城南影像社" data-zc-field="城市探索 / 在地文化">查看档案</button>
+    </article>
+  </div>
+</section>
+
+<!-- 故事随笔 -->
+<section class="zc-sec" id="zc-stories" style="padding-top:20px">
+  <div class="zc-sec-head">
+    <div>
+      <div class="zc-sec-kicker">STORIES</div>
+      <h2 class="zc-sec-title">故事与随笔：内容背后的人</h2>
+      <p class="zc-sec-desc">影像之外，文字同样记录着这个社区的呼吸。</p>
+    </div>
+  </div>
+  <div class="zc-story-grid">
+    <article class="zc-story-main">
+      <div class="zc-cover">
+        <img alt="深夜校对台灯光下的字幕草稿特写" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Cdefs%3E%3CradialGradient id='lamp' cx='50%' cy='30%' r='60%'%3E%3Cstop offset='0' stop-color='%23f8d7a0'/%3E%3Cstop offset='1' stop-color='%231a2030'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect width='640' height='360' fill='url(%23lamp)'/%3E%3Crect x='0' y='250' width='640' height='110' fill='%23544636'/%3E%3Crect x='100' y='200' width='300' height='60' rx='6' fill='%23fdf4e3'/%3E%3Cg stroke='%23b08a5f' stroke-width='4'%3E%3Cpath d='M120 220h180M120 236h140M120 252h200'/%3E%3C/g%3E%3Cpath d='M470 160l24-60 24 60z' fill='%23f6d28a'/%3E%3Crect x='484' y='160' width='20' height='90' fill='%23a5804c'/%3E%3C/svg%3E">
+      </div>
+      <div class="zc-story-text">
+        <h3>那一句「算了」，我改了六遍</h3>
+        <p>在一部家庭题材作品里，主角面对旧友时说的「算了」承担着整场戏的情绪转折。直译太轻，意译太重。我把它改成「就这样吧」，又觉得过于顺从；换成「不提了」，节奏又断了。最终我选了「算了，也行」，多出的三个字给了角色一层自嘲。观众可能永远不会注意到这六次改动，但我知道，那一晚的校对没有白费。</p>
+      </div>
+    </article>
+    <div class="zc-story-list">
+      <article class="zc-story-item">
+        <h4>从观众到校对志愿者，我花了两年</h4>
+        <p>最初只是习惯性在评论区提建议，后来被邀请进入二审小组。第一次驳回别人的译法时，我才意识到「判断」比「感觉」更需要依据。</p>
+        <span># 创作者成长</span>
+      </article>
+      <article class="zc-story-item">
+        <h4>家人第一次看懂了我的工作</h4>
+        <p>过年时给家里人放了我参与的作品，我妈指着屏幕说「这行字看着舒服」。那一刻我忽然觉得，字幕这份手艺也值得被认真介绍。</p>
+        <span># 真实记录</span>
+      </article>
+      <article class="zc-story-item">
+        <h4>我们为什么坚持公开修订记录</h4>
+        <p>透明会带来压力，但也带来信任。每一条修改理由都写下来之后，讨论从争吵变成了推演，社区的气氛也随之改变。</p>
+        <span># 品牌故事</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 作品墙 -->
+<section class="zc-sec" id="zc-wall" style="padding-top:20px">
+  <div class="zc-sec-head">
+    <div>
+      <div class="zc-sec-kicker">IMAGE WALL</div>
+      <h2 class="zc-sec-title">社区作品墙：来自创作者的真实片段</h2>
+      <p class="zc-sec-desc">本期共收录 6 组影像片段，题材与风格各异，均由社区创作者投稿。</p>
+    </div>
+  </div>
+  <div class="zc-wall">
+    <figure class="zc-w1">
+      <img alt="手作工作室里木屑与字幕稿并置的影像" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 480'%3E%3Crect width='480' height='480' fill='%232a2018'/%3E%3Crect x='0' y='320' width='480' height='160' fill='%233f3020'/%3E%3Cg fill='%23c89b62'%3E%3Crect x='80' y='200' width='160' height='20' rx='6'/%3E%3Crect x='110' y='150' width='24' height='70' rx='5'/%3E%3Crect x='200' y='250' width='110' height='14' rx='6'/%3E%3C/g%3E%3Ccircle cx='360' cy='150' r='54' fill='%23f6d7a3' opacity='.5'/%3E%3Crect x='60' y='380' width='360' height='16' rx='8' fill='%23a5764a' opacity='.75'/%3E%3C/svg%3E">
+      <figcaption>木工台与字幕稿 · 手作十二时幕后</figcaption>
+    </figure>
+    <figure class="zc-w2">
+      <img alt="清晨窗边阅读与字幕笔记的影像" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 240'%3E%3Crect width='320' height='240' fill='%23f2e6d0'/%3E%3Crect x='40' y='40' width='90' height='120' rx='4' fill='%23bdd9ea'/%3E%3Crect x='46' y='46' width='78' height='108' fill='%23d6ecf7'/%3E%3Crect x='0' y='180' width='320' height='60' fill='%23c9a97c'/%3E%3Crect x='150' y='150' width='120' height='40' rx='4' fill='%23fdf6e7' transform='rotate(-8 150 150)'/%3E%3C/svg%3E">
+      <figcaption>窗边笔记 · 日常记录</figcaption>
+    </figure>
+    <figure class="zc-w3">
+      <img alt="霓虹夜景中的街角字幕投影" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 240 240'%3E%3Crect width='240' height='240' fill='%230b1424'/%3E%3Crect x='20' y='40' width='70' height='180' fill='%231a2b46'/%3E%3Crect x='110' y='70' width='50' height='150' fill='%23132640'/%3E%3Cpath d='M170 90h50v130h-50z' fill='%23172a47'/%3E%3Crect x='30' y='180' width='80' height='10' rx='5' fill='%2367e8f9' opacity='.9'/%3E%3Ccircle cx='60' cy='60' r='6' fill='%23a78bfa'/%3E%3Ccircle cx='200' cy='110' r='5' fill='%23fbbf24'/%3E%3C/svg%3E">
+      <figcaption>街角字幕 · 城市夜行</figcaption>
+    </figure>
+    <figure class="zc-w4">
+      <img alt="录音棚中的麦克风与波形监视画面" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 240'%3E%3Crect width='320' height='240' fill='%23121b2c'/%3E%3Crect x='130' y='40' width='60' height='110' rx='30' fill='%233b4d6b'/%3E%3Crect x='156' y='150' width='8' height='50' fill='%236b7f9e'/%3E%3Cg stroke='%2367e8f9' stroke-width='2' opacity='.7' fill='none'%3E%3Cpath d='M40 210l20-24 20 24 20-32 20 32 20-18 20 18 20-26 20 26'/%3E%3C/g%3E%3C/svg%3E">
+      <figcaption>录音棚音轨 · 声音与字幕的配合</figcaption>
+    </figure>
+    <figure class="zc-w5">
+      <img alt="露营夜空下投影播放影像的画面" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 240'%3E%3Crect width='320' height='240' fill='%230d1b2a'/%3E%3Ccircle cx='250' cy='56' r='22' fill='%23fdf3c9' opacity='.85'/%3E%3Cpath d='M0 200q80-40 160 0t160 0v40H0z' fill='%23142a34'/%3E%3Cpath d='M110 200l40-56 40 56z' fill='%23304a3e'/%3E%3Crect x='140' y='176' width='24' height='24' fill='%23fbbf24' opacity='.85'/%3E%3Cg fill='%2367e8f9' opacity='.7'%3E%3Ccircle cx='60' cy='50' r='2'/%3E%3Ccircle cx='150' cy='30' r='1.6'/%3E%3Ccircle cx='210' cy='90' r='1.8'/%3E%3C/g%3E%3C/svg%3E">
+      <figcaption>露营放映夜 · 户外活动</figcaption>
+    </figure>
+    <figure class="zc-w6">
+      <img alt="编辑室里多块屏幕对照字幕的画面" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 240'%3E%3Crect width='320' height='240' fill='%23161f36'/%3E%3Cg fill='%230d1220' stroke='%232c3f74'%3E%3Crect x='24' y='40' width='120' height='80' rx='6'/%3E%3Crect x='168' y='40' width='128' height='80' rx='6'/%3E%3Crect x='24' y='140' width='272' height='70' rx='6'/%3E%3C/g%3E%3Cg fill='%2367e8f9' opacity='.75'%3E%3Crect x='36' y='96' width='90' height='8' rx='4'/%3E%3Crect x='180' y='96' width='100' height='8' rx='4'/%3E%3Crect x='36' y='188' width='200' height='8' rx='4'/%3E%3C/g%3E%3C/svg%3E">
+      <figcaption>多屏校对台 · 今日工作现场</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- 评价 -->
+<section class="zc-sec" id="zc-reviews" style="padding-top:20px">
+  <div class="zc-sec-head">
+    <div>
+      <div class="zc-sec-kicker">COMMUNITY VOICES</div>
+      <h2 class="zc-sec-title">用户评价：来自社区的真实声音</h2>
+      <p class="zc-sec-desc">这些反馈部分已进入产品迭代计划，感谢每一位认真提出建议的用户。</p>
+    </div>
+  </div>
+  <div class="zc-review-grid">
+    <article class="zc-review">
+      <div class="zc-review-head">
+        <span class="zc-avatar" style="background:#67e8f9">林</span>
+        <div><b>林间有风</b><span>关注 2 年</span></div>
+      </div>
+      <div class="zc-stars">★★★★★</div>
+      <p>最喜欢的是修订记录公开这一点。以前看字幕只觉得哪里怪，现在能看到为什么这样改，等于顺便学了一遍翻译思路，收获比正片还大。</p>
+    </article>
+    <article class="zc-review">
+      <div class="zc-review-head">
+        <span class="zc-avatar" style="background:#a78bfa">周</span>
+        <div><b>周末剪辑室</b><span>创作者</span></div>
+      </div>
+      <div class="zc-stars">★★★★★</div>
+      <p>术语库帮了大忙。我做的题材涉及不少专业词，以前每条都要自己查一遍，现在直接引用，还能看到别人补充的使用场景说明。</p>
+    </article>
+    <article class="zc-review">
+      <div class="zc-review-head">
+        <span class="zc-avatar" style="background:#fbbf24">陈</span>
+        <div><b>陈小满</b><span>关注 8 个月</span></div>
+      </div>
+      <div class="zc-stars">★★★★☆</div>
+      <p>内容质量整体很稳，专题企划的选题有想法。唯一的小建议是希望移动端的筛选标签再多一些，有时候想按创作者筛不太方便。</p>
+    </article>
+    <article class="zc-review">
+      <div class="zc-review-head">
+        <span class="zc-avatar" style="background:#34d399">海</span>
+        <div><b>海边放映员</b><span>关注 1 年</span></div>
+      </div>
+      <div class="zc-stars">★★★★★</div>
+      <p>作为线下放映活动的组织者，我经常在这里找素材参考。高清、准确、格式规范，直接能用，省了很多沟通成本。</p>
+    </article>
+    <article class="zc-review">
+      <div class="zc-review-head">
+        <span class="zc-avatar" style="background:#f472b6">苏</span>
+        <div><b>苏打水不加冰</b><span>关注 5 个月</span></div>
+      </div>
+      <div class="zc-stars">★★★★☆</div>
+      <p>作品墙是我每周必看的部分，能看到很多不那么「完美」但很真诚的记录。希望以后能增加按主题收藏作品墙的功能。</p>
+    </article>
+    <article class="zc-review">
+      <div class="zc-review-head">
+        <span class="zc-avatar" style="background:#60a5fa">老</span>
+        <div><b>老张的硬盘</b><span>关注 3 年</span></div>
+      </div>
+      <div class="zc-stars">★★★★★</div>
+      <p>从最早的读者一路看着社区长起来。校对机制越来越规范，但氛围没变，评论区还是在认真讨论具体问题，这点很难得。</p>
+    </article>
+  </div>
+</section>
+
+<!-- 动态 + 榜单 -->
+<section class="zc-sec" id="zc-updates" style="padding-top:20px">
+  <div class="zc-sec-head">
+    <div>
+      <div class="zc-sec-kicker">UPDATES &amp; RANKING</div>
+      <h2 class="zc-sec-title">企业动态与社区榜单</h2>
+      <p class="zc-sec-desc">官方发布节奏保持每月更新，榜单每周一刷新。</p>
+    </div>
+  </div>
+  <div class="zc-split">
+    <ul class="zc-timeline">
+      <li>
+        <b>术语条目库 2.0 正式上线</b>
+        <span>2026-11-15 · 产品更新</span>
+        <p>新增跨语言检索、引用计数与团队协作面板，已有 428 条术语通过评审入库，支持创作者一键引用到字幕工程。</p>
+      </li>
+      <li>
+        <b>「十二小时字幕挑战赛」结果公布</b>
+        <span>2026-11-08 · 比赛结果</span>
+        <p>共收到 137 份有效投稿，最终评选出 12 份优秀作品，全部收录至本期专题企划，可前往专题页查看。</p>
+      </li>
+      <li>
+        <b>创作者字幕规范 2.0 发布</b>
+        <span>2026-10-28 · 官方发布</span>
+        <p>重新梳理断句、标点与专有名词处理规则，补充移动端可读性建议，并提供可下载的对照示例手册。</p>
+      </li>
+      <li>
+        <b>方言对照计划第三期招募开启</b>
+        <span>2026-10-12 · 报名开放</span>
+        <p>本期聚焦西南地区方言，计划招募 8 位在地创作者，报名需提交一段 3 分钟以内的试译样片。</p>
+      </li>
+      <li>
+        <b>社区作品墙改版</b>
+        <span>2026-09-30 · 品牌动态</span>
+        <p>作品墙支持尺寸混合展示与主题筛选，投稿入口同步开放，单期最多可提交 3 组作品。</p>
+      </li>
+    </ul>
+    <div class="zc-rank">
+      <h3>本周口碑榜</h3>
+      <ul>
+        <li><span class="zc-rank-no">1</span><span>《城与海之间》重译全记录</span><em>口碑 9.6</em></li>
+        <li><span class="zc-rank-no">2</span><span>零基础学时间轴对齐</span><em>口碑 9.4</em></li>
+        <li><span class="zc-rank-no">3</span><span>老城骑楼下的方言字幕</span><em>口碑 9.3</em></li>
+        <li><span class="zc-rank-no">4</span><span>对话资深译制编辑</span><em>口碑 9.2</em></li>
+        <li><span class="zc-rank-no">5</span><span>字幕样式设计可读性法则</span><em>口碑 9.0</em></li>
+        <li><span class="zc-rank-no">6</span><span>我在家做字幕的第 400 天</span><em>口碑 8.9</em></li>
+        <li><span class="zc-rank-no">7</span><span>语音识别辅助字幕实测</span><em>口碑 8.7</em></li>
+      </ul>
+      <a class="zc-more" href="#zc-hot" style="display:inline-block;margin-top:16px">查看完整榜单 →</a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="zc-sec" id="zc-faq" style="padding-top:20px">
+  <div class="zc-sec-head" style="justify-content:center;text-align:center;flex-direction:column;align-items:center">
+    <div>
+      <div class="zc-sec-kicker">HELP CENTER</div>
+      <h2 class="zc-sec-title">常见问题</h2>
+      <p class="zc-sec-desc">关于投稿、校对、术语库与合作的常见疑问，点击展开查看。</p>
+    </div>
+  </div>
+  <div class="zc-faq-list">
+    <details>
+      <summary>如何成为平台的创作者？</summary>
+      <p>在「合作与投稿」区块提交申请表，附上一段 3 分钟以内的样片与作品说明。官方编辑团队会在 7 个工作日内回复，通过后即可获得字幕工程模板与发布权限。新人创作者可先参与专题共建积累作品，再申请独立发布。</p>
+    </details>
+    <details>
+      <summary>字幕校对的三层机制具体怎么执行？</summary>
+      <p>初稿由投稿创作者完成，二审由具备相关领域背景的校对志愿者承担，终审由官方编辑团队把关。每层都需填写修改理由，所有理由在作品发布后进入公开修订记录，供其他创作者参考复用。</p>
+    </details>
+    <details>
+      <summary>术语条目库可以商用吗？</summary>
+      <p>术语释义与示例可自由引用，但需保留来源标注。如用于商业项目批量调用，请提前通过「合作与投稿」与我们联系，官方会提供相应的授权说明与技术对接支持。</p>
+    </details>
+    <details>
+      <summary>专题企划的选题是谁决定的？</summary>
+      <p>选题由官方编辑团队发起初稿，并在社区开放投票与建议征集，最终方向综合创作者意愿与用户投票结果确定。每期企划的进度与阶段性成果都会在企业动态中公开。</p>
+    </details>
+    <details>
+      <summary>作品墙上传的尺寸与格式有什么要求？</summary>
+      <p>建议使用 16:9 或 4:3 比例的图片，单张不超过 5MB，格式支持 JPG 与 PNG。每组作品需附 50 字以内的说明，并标注所属题材标签，便于社区筛选与展示。</p>
+    </details>
+    <details>
+      <summary>发现字幕有错误，应该怎么反馈？</summary>
+      <p>可在对应视频卡片下方使用反馈入口提交具体时间点与修改建议，也可在社区讨论区发起术语讨论。官方会定期汇总高频反馈，并在动态中公开处理结果。</p>
+    </details>
+    <details>
+      <summary>平台支持哪些合作形式？</summary>
+      <p>目前支持专题联合企划、术语库共建、线下放映素材支持、创作者扶持计划四种形式。企业或机构合作请通过联系区块留言，注明合作方向与预期周期，我们会安排专人对接。</p>
+    </details>
+  </div>
+</section>
+
+<!-- 联系 -->
+<section class="zc-contact" id="zc-contact">
+  <div class="zc-sec zc-contact-inner">
+    <div class="zc-contact-txt">
+      <h2>和我们一起，把内容做得更准确</h2>
+      <p>无论你是创作者、机构还是长期读者，都欢迎留下你的想法。投稿、合作、纠错建议，我们都会认真阅读并逐条回复。</p>
+      <div class="zc-contact-info">
+        <div><b>合作邮箱</b><span>brand@123-subtitle-studio.example</span></div>
+        <div><b>投稿通道</b><span>每日 09:00 - 21:00 接收，7 个工作日内回复</span></div>
+        <div><b>办公地址</b><span>城市创意园区 B 座三层 · 内容生态中心</span></div>
+        <div><b>社区公约</b><span>尊重事实、尊重创作者、尊重不同语言的表达习惯</span></div>
+      </div>
+    </div>
+    <form class="zc-form" id="zcContactForm">
+      <label>你的称呼
+        <input type="text" name="name" placeholder="例如：一位长期读者" required>
+      </label>
+      <label>联系方式
+        <input type="email" name="email" placeholder="用于接收回复的邮箱" required>
+      </label>
+      <label>想说的话
+        <textarea name="msg" placeholder="投稿方向、合作意向或具体建议……" required></textarea>
+      </label>
+      <button type="submit" class="zc-btn zc-btn-main">提交信息</button>
+    </form>
+  </div>
+</section>
+
+<!-- 页脚 -->
+<footer class="zc-footer">
+  <div class="zc-footer-inner">
+    <div class="zc-footer-brand">
+      <div class="zc-logo">
+        <span class="zc-logo-mark">123</span>
+        <span>123中文字幕一区<small>SUBTITLE STUDIO</small></span>
+      </div>
+      <p>123中文字幕一区官方网站，专注中文字幕内容的校对、共建与传播，致力于为创作者与观众搭建值得信赖的高品质内容生态，持续运营中。</p>
+    </div>
+    <div>
+      <h4>内容</h4>
+      <ul>
+        <li><a href="#zc-focus">视频焦点</a></li>
+        <li><a href="#zc-hot">热门内容</a></li>
+        <li><a href="#zc-topics">专题企划</a></li>
+        <li><a href="#zc-wall">作品墙</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>社区</h4>
+      <ul>
+        <li><a href="#zc-creators">创作者矩阵</a></li>
+        <li><a href="#zc-stories">故事与随笔</a></li>
+        <li><a href="#zc-reviews">用户评价</a></li>
+        <li><a href="#zc-updates">企业动态</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>支持</h4>
+      <ul>
+        <li><a href="#zc-faq">常见问题</a></li>
+        <li><a href="#zc-contact">合作与投稿</a></li>
+        <li><a href="#zc-contact">纠错反馈</a></li>
+        <li><a href="#zc-top">回到顶部</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="zc-footer-bot">
+    <span>© 2026 123中文字幕一区 官方网站 · 版权所有 · 持续运营中</span>
+    <span>内容校对规范 2.0 · 术语条目库 v2.0 · 本站为品牌展示站点</span>
+  </div>
+</footer>
+
+<!-- 弹窗 -->
+<div class="zc-modal-mask" id="zcModalMask">
+  <div class="zc-modal" role="dialog" aria-modal="true">
+    <button class="zc-modal-close" id="zcModalClose" aria-label="关闭">✕</button>
+    <h3 id="zcModalTitle">提示</h3>
+    <p id="zcModalBody">内容</p>
+    <div class="zc-modal-tags" id="zcModalTags"></div>
+  </div>
+</div>
+<div class="zc-toast" id="zcToast">已复制</div>
+<button class="zc-top" id="zcTopBtn" aria-label="回到顶部">↑</button>
+
+<script>
+(function(){
+  "use strict";
+
+  /* 工具 */
+  var $ = function(s,ctx){return (ctx||document).querySelector(s);};
+  var $$ = function(s,ctx){return Array.prototype.slice.call((ctx||document).querySelectorAll(s));};
+
+  var toastEl = $('#zcToast');
+  var toastTimer = null;
+  function toast(msg){
+    if(!toastEl) return;
+    toastEl.textContent = msg;
+    toastEl.classList.add('zc-show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toastEl.classList.remove('zc-show'); },1900);
+  }
+
+  /* 移动端导航 */
+  var burger = $('#zcBurger'), nav = $('#zcNav');
+  if(burger && nav){
+    burger.addEventListener('click',function(){
+      nav.classList.toggle('zc-open');
+      burger.textContent = nav.classList.contains('zc-open') ? '✕' : '☰';
+    });
+    $$('a',nav).forEach(function(a){
+      a.addEventListener('click',function(){
+        nav.classList.remove('zc-open');
+        if(burger) burger.textContent = '☰';
+      });
+    });
+  }
+
+  /* 搜索 */
+  var searchInput = $('#zcSearchInput');
+  var searchBtn = $('#zcSearchBtn');
+  var searchTip = $('#zcSearchTip');
+  var searchPool = [
+    '时间轴对齐 · 教程合集',
+    '方言字幕 · 专题企划',
+    '术语条目库 · 使用指南',
+    '字幕样式 · 可读性法则',
+    '城市探索 · 在地文化',
+    '创作者矩阵 · 阿岚的工作台',
+    '校对机制 · 三层流程',
+    '十二小时挑战赛 · 结果'
+  ];
+  function doSearch(){
+    if(!searchInput || !searchTip) return;
+    var q = (searchInput.value || '').trim();
+    if(!q){
+      searchTip.innerHTML = '输入关键词试试，例如 <b>时间轴</b> 或 <b>术语库</b>';
+      searchTip.classList.add('zc-show');
+      return;
+    }
+    var hits = searchPool.filter(function(x){ return x.indexOf(q) > -1; });
+    if(!hits.length){
+      hits = searchPool.slice(0,3);
+      searchTip.innerHTML = '未找到完全匹配的「<b>'+q+'</b>」，你可能想找：<br>' + hits.join(' · ');
+    }else{
+      searchTip.innerHTML = '找到 '+hits.length+' 条与「<b>'+q+'</b>」相关的内容：<br>' + hits.join(' · ');
+    }
+    searchTip.classList.add('zc-show');
+  }
+  if(searchBtn) searchBtn.addEventListener('click',function(e){ e.preventDefault(); doSearch(); });
+  if(searchInput){
+    searchInput.addEventListener('keydown',function(e){
+      if(e.key === 'Enter'){ e.preventDefault(); doSearch(); }
+    });
+  }
+  document.addEventListener('click',function(e){
+    if(searchTip && searchTip.classList.contains('zc-show')){
+      var box = $('#zcSearch');
+      if(box && !box.contains(e.target)) searchTip.classList.remove('zc-show');
+    }
+  });
+
+  /* 点赞 / 收藏 / 分享 */
+  document.addEventListener('click',function(e){
+    var like = e.target.closest('[data-zc-like]');
+    if(like){
+      var numEl = like.querySelector('[data-zc-like-num]');
+      var ico = like.querySelector('.zc-ico');
+      var on = like.classList.toggle('zc-on');
+      if(numEl){
+        var n = parseInt(numEl.textContent.replace(/,/g,''),10) || 0;
+        n = on ? n + 1 : Math.max(0, n - 1);
+        numEl.textContent = n;
+      }
+      if(ico) ico.textContent = on ? '♥' : '♡';
+      toast(on ? '已点赞，感谢你的支持' : '已取消点赞');
+      return;
+    }
+    var fav = e.target.closest('[data-zc-fav]');
+    if(fav){
+      var onF = fav.classList.toggle('zc-on');
+      var icoF = fav.querySelector('.zc-ico');
+      if(icoF) icoF.textContent = onF ? '★' : '☆';
+      toast(onF ? '已加入收藏夹' : '已取消收藏');
+      return;
+    }
+    var share = e.target.closest('[data-zc-share]');
+    if(share){
+      openShare();
+      return;
+    }
+  });
+
+  /* 弹窗 */
+  var mask = $('#zcModalMask'), mTitle = $('#zcModalTitle'), mBody = $('#zcModalBody'), mTags = $('#zcModalTags');
+  function openModal(title, body, tags){
+    if(!mask) return;
+    mTitle.textContent = title;
+    mBody.innerHTML = body;
+    mTags.innerHTML = '';
+    (tags || []).forEach(function(t){
+      var a = document.createElement('a');
+      a.href = 'javascript:void(0)';
+      a.textContent = t;
+      a.addEventListener('click',function(){ toast('已选择分享渠道：' + t); });
+      mTags.appendChild(a);
+    });
+    mask.classList.add('zc-show');
+  }
+  function closeModal(){ if(mask) mask.classList.remove('zc-show'); }
+  if($('#zcModalClose')) $('#zcModalClose').addEventListener('click',closeModal);
+  if(mask) mask.addEventListener('click',function(e){ if(e.target === mask) closeModal(); });
+  document.addEventListener('keydown',function(e){ if(e.key === 'Escape') closeModal(); });
+
+  function openShare(){
+    openModal('分享给朋友','复制页面链接或选择常用渠道，把这条内容推荐给同样关注中文字幕的朋友。',['微信','微博','QQ','复制链接']);
+  }
+
+  /* 创作者档案 */
+  document.addEventListener('click',function(e){
+    var b = e.target.closest('[data-zc-creator]');
+    if(!b) return;
+    var name = b.getAttribute('data-zc-creator');
+    var field = b.getAttribute('data-zc-field');
+    openModal(name + ' · 创作者档案',
+      '擅长领域：' + field + '。该创作者长期参与 123中文字幕一区的专题共建，作品以细节严谨、节奏克制著称。合作方式包括专题联合企划、术语条目共建与教程系列连载。',
+      ['查看作品','发送合作意向','关注']);
+  });
+
+  /* 标签筛选 */
+  var filterBox = $('#zcFilter');
+  if(filterBox){
+    filterBox.addEventListener('click',function(e){
+      var chip = e.target.closest('[data-zc-filter]');
+      if(!chip) return;
+      $$('.zc-chip',filterBox).forEach(function(c){ c.classList.remove('zc-on'); });
+      chip.classList.add('zc-on');
+      var key = chip.getAttribute('data-zc-filter');
+      var cards = $$('#zcHotGrid .zc-video-card');
+      var shown = 0;
+      cards.forEach(function(card){
+        var match = (key === 'all') || (card.getAttribute('data-zc-cat') === key);
+        card.classList.toggle('zc-is-hidden', !match);
+        if(match) shown++;
+      });
+      toast('已筛选：' + chip.textContent.trim() + '（' + shown + ' 条）');
+    });
+  }
+
+  /* 表单 */
+  var form = $('#zcContactForm');
+  if(form){
+    form.addEventListener('submit',function(e){
+      e.preventDefault();
+      var nameInput = form.querySelector('input[name="name"]');
+      var msgInput = form.querySelector('textarea[name="msg"]');
+      if(!nameInput.value.trim() || !msgInput.value.trim()){
+        toast('请补充称呼与想说的话');
+        return;
+      }
+      toast('提交成功，我们会在 7 个工作日内回复');
+      form.reset();
+    });
+  }
+
+  /* 数字滚动 */
+  var counted = false;
+  function countUp(){
+    if(counted) return;
+    counted = true;
+    $$('[data-zc-count]').forEach(function(el){
+      var target = parseInt(el.getAttribute('data-zc-count'),10) || 0;
+      var start = null, dur = 1300;
+      function step(ts){
+        if(!start) start = ts;
+        var p = Math.min((ts - start)/dur, 1);
+        var eased = 1 - Math.pow(1 - p, 3);
+        el.textContent = Math.floor(target * eased).toLocaleString('en-US');
+        if(p < 1) requestAnimationFrame(step);
+        else el.textContent = target.toLocaleString('en-US');
+      }
+      requestAnimationFrame(step);
+    });
+  }
+  if('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){ if(en.isIntersecting) countUp(); });
+    },{threshold:.3});
+    var heroStats = document.querySelector('.zc-hero-stats');
+    if(heroStats) io.observe(heroStats);
+  }else{
+    countUp();
+  }
+
+  /* 回到顶部 */
+  var topBtn = $('#zcTopBtn');
+  window.addEventListener('scroll',function(){
+    if(!topBtn) return;
+    if(window.scrollY > 520) topBtn.classList.add('zc-show');
+    else topBtn.classList.remove('zc-show');
+  },{passive:true});
+  if(topBtn) topBtn.addEventListener('click',function(){
+    window.scrollTo({top:0,behavior:'smooth'});
+  });
+
+  /* 锚点偏移：预留公告条 + 页头高度 */
+  document.addEventListener('click',function(e){
+    var a = e.target.closest('a[href^="#"]');
+    if(!a) return;
+    var id = a.getAttribute('href');
+    if(id.length < 2) return;
+    var target = document.querySelector(id);
+    if(!target) return;
+    e.preventDefault();
+    var sticky = document.querySelector('.zc-sticky-wrap');
+    var offset = sticky ? sticky.getBoundingClientRect().height : 0;
+    var top = target.getBoundingClientRect().top + window.pageYOffset - offset - 12;
+    window.scrollTo({top: top, behavior:'smooth'});
+    history.replaceState(null,'',id);
+  });
+
+  /* 导航高亮 */
+  var sections = ['zc-top','zc-focus','zc-hot','zc-topics','zc-creators','zc-updates','zc-faq','zc-contact'];
+  function syncNav(){
+    var offset = 120;
+    var current = sections[0];
+    sections.forEach(function(id){
+      var el = document.getElementById(id);
+      if(el && el.getBoundingClientRect().top - offset <= 0) current = id;
+    });
+    $$('.zc-nav a').forEach(function(a){
+      a.classList.toggle('zc-is-active', a.getAttribute('href') === '#' + current);
+    });
+  }
+  window.addEventListener('scroll',syncNav,{passive:true});
+  syncNav();
+
+})();
+</script>
+</body>
+  </html>
